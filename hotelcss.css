@@ -1,0 +1,62 @@
+body{
+   background:url("https://images6.alphacoders.com/349/349835.jpg");
+   background-size:cover;
+}
+
+#title{
+  font-size:300%;
+  color:white;
+  font-style:italic;
+}
+#roomOne{
+  border-radius:25px;
+  background-color:white;
+  width:23%;
+  float:left;
+  margin:7.5px;
+  padding:5px;
+}
+#roomTwo{
+  border-radius:25px;
+  background-color:white;
+  width:23%;
+  float:left;
+  margin:7.5px;
+  padding:5px;
+}
+
+#roomThree{
+  border-radius:25px;
+  background-color:white;
+  width:23%;
+  float:left;
+  margin:7.5px;
+  padding:5px;
+}
+#roomFour{
+  border-radius:25px;
+  background-color:white;
+  width:23%;
+  float:left;
+  margin:7.5px;
+  padding:5px;
+}
+
+.hotel{
+  text-align:center;
+  font-style:italic;
+  color:black;
+}
+
+button{
+  border:0px;
+  
+}
+input{
+  
+  background:rgba(175, 175, 175, 0.6);
+  border:0px;
+}
+select{
+  border:0px;
+}
