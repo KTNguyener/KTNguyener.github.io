@@ -54,7 +54,7 @@ function create() {
     ground.scale.setTo(2, 2);
 
     //  This stops it from falling away when you jump on it
-    ground.body.immovable = false;
+    ground.body.immovable = true;
 
     //  Now let's create two ledges
     var ledge = platforms.create(400, 400, 'ground');
@@ -153,7 +153,7 @@ function collectStar (player, star) {
     star.kill();
 
     //  Add and update the score
-    score += 10;
+    score += 100;
     scoreText.text = 'Score: ' + score;
 
 }
