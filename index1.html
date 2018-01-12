@@ -88,8 +88,7 @@ function create() {
     stars = game.add.group();
 	
 	//try modifying the star dimensions
-	stars.width=24;
-	stars.height=22;
+
 
     //  We will enable physics for any star that is created in this group
     stars.enableBody = true;
@@ -99,6 +98,9 @@ function create() {
     {
         //  Create a star inside of the 'stars' group
         var star = stars.create(i * 35, 0, 'star');
+	    
+	stars.width=24;
+	stars.height=22;
 
         //  Let gravity do its thing
         star.body.gravity.y = 300;
