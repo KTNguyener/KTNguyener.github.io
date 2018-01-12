@@ -23,6 +23,7 @@ function preload() {
     game.load.image('star', 'assets/star.png');
     game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
     game.load.audio('background_music', 'assets/Outnumbered.mp3');
+	game.load.audio('collection_sound', 'assets/SayWhatAgain.mp3');
     
     backgroundMusic= game.add.audio('background_music');
     backgroundMusic.loop=true;
@@ -160,6 +161,8 @@ function collectStar (player, star) {
     //  Add and update the score
     score += 10;
     scoreText.text = 'Score: ' + score;
+	sound=game.add.audio('collection_sound');
+	sound.play();
 
 }
 
