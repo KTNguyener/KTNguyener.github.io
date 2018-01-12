@@ -107,7 +107,12 @@ function create() {
     scoreText = game.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
 
     //  Our controls.
-    cursors = game.input.keyboard.createCursorKeys();
+    cursors = = {
+  up: XV.game.input.keyboard.addKey(Phaser.Keyboard.W),
+  down: XV.game.input.keyboard.addKey(Phaser.Keyboard.S),
+  left: XV.game.input.keyboard.addKey(Phaser.Keyboard.A),
+  right: XV.game.input.keyboard.addKey(Phaser.Keyboard.D),
+};
     
 }
 
