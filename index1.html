@@ -86,6 +86,10 @@ function create() {
 
     //  Finally some stars to collect
     stars = game.add.group();
+	
+	//try modifying the star dimensions
+	stars.width=24;
+	stars.height=22;
 
     //  We will enable physics for any star that is created in this group
     stars.enableBody = true;
