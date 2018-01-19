@@ -13,13 +13,13 @@ start:
   - deuzi says: And if not...
   - show deuzi: happy
   - deuzi says: No problem!
-  - deuzi says: RenJS is made so the text of your story is written intuitively like a script. 
+  - deuzi says: RenJS is made so the text of your story is written intuitively like a script.
   - show deuzi: normal
   - deuzi says: Once you learn the structure, there's no limit to what you can create.
   - deuzi says: So let's start with...
-  - effect SHOWTITLE: 
+  - effect SHOWTITLE:
     title: Chapter 1
-    subtitle: The basics 
+    subtitle: The basics
   - deuzi says: First thing we'll check is the file structure.
   - deuzi says: That is, all the files you need for your game to work properly.
   - deuzi says: We'll use this game as an example.
@@ -95,7 +95,7 @@ storySetup:
   - jair says: I'm Jair, btw.
   - jair says: But you should know that, since my name is on display right above the text box.
   - jair says: I'm here to show you how to setup your story.
-  - effect SHOWTITLE: 
+  - effect SHOWTITLE:
     title: Chapter 2
     subtitle: Setting up the story
   - jair says: All the setup is contained in the Setup.yaml file.
@@ -232,7 +232,7 @@ writingTheStory:
   - liz says: Here we'll see how to actually write the story.
   - show liz: happy
   - liz says: Are you ready!?
-  - effect SHOWTITLE: 
+  - effect SHOWTITLE:
     title: Chapter 3
     subtitle: Writing Part 1
   - show liz: normal
@@ -327,11 +327,11 @@ interval:
     - Isn't it a bit awkward???:
       - show deuzi: angryC
       - deuzi says: What do you mean?
-      - deuzi says: Because I'm your teacher?  
+      - deuzi says: Because I'm your teacher?
       - show deuzi: happyC
       - deuzi says: We're almost the same age!
       - show deuzi: normalC
-      - deuzi says: You might be teaching some years from now too. 
+      - deuzi says: You might be teaching some years from now too.
       - show deuzi: angryC
       - deuzi says: Then you'll see how awkward it is to be called professor and be treatead like and old person.
       - show deuzi: normalC
@@ -456,7 +456,7 @@ storeAtNight:
 backToTheRoom:
   - play cicadas: WITH FADE
   - show room_night:
-  - show room_night_light: WITH FUSION  
+  - show room_night_light: WITH FUSION
   - text: Your day was very tiring, but you're closer to be a visual novel writer. Tomorrow is going to be another long day, you better rest.
   - show room_night: WITH FUSION
   - wait: 400
@@ -475,7 +475,7 @@ day2:
   - show liz: WITH FADE
   - liz says: Good morning!
   - liz says: Let's start right away.
-  - effect SHOWTITLE: 
+  - effect SHOWTITLE:
     title: Chapter 4
     subtitle: Writing Part 2
   - liz says: Today we're going to see a very important part of writting interactive fiction.
@@ -519,7 +519,7 @@ day2:
   - liz says: And that also means that you have to explicitly call the next scene when the current one ends.
   - liz says: We can see here that the game will continue in different paths depending on what choices the player makes.
   - liz says: When you change the scene, nothing else from that scene is executed.
-  - liz says: So if the player picks the phone up and then chooses to go to the party, the scene will change immediately to the 'partyScene' scene. 
+  - liz says: So if the player picks the phone up and then chooses to go to the party, the scene will change immediately to the 'partyScene' scene.
   - liz says: And if she doesn't attend the call or chooses not to go, the scene will continue until the end and change to the 'dormsScene' scene.
   - hide lessonScene:
   - show liz: happy
@@ -601,7 +601,7 @@ lessonStoryFlux:
   - marco says: Now I can tell you.
   - show marco: happy
   - marco says: Hi! My name is Marco, and I'll be teaching you about logic and variables.
-  - effect SHOWTITLE: 
+  - effect SHOWTITLE:
     title: Chapter 5
     subtitle: Story Flux
   - show marco: normal
@@ -615,7 +615,7 @@ lessonStoryFlux:
   - marco says: Let's see an example of what you can do with this action.
   - show marco: AT RIGHT WITH MOVE
   - show lessonVarsNumeric:
-  - marco says: Let's start with the easiest of the variable types, numbers. 
+  - marco says: Let's start with the easiest of the variable types, numbers.
   - marco says: This kind of action is often called an assignation.
   - marco says: It assigns a value to a variable.
   - marco says: "We can say an assignation has two parts: left and right."
@@ -669,10 +669,10 @@ lessonStoryFlux:
   - marco says: "'<' less than and '<=' less than or equal to."
   - marco says: We use those symbols to compare numbers and or variables that contain numbers.
   - marco says: So we can resolve that a 'highScore' means the 'score is greater than 10'.
-  - marco says: A 'perfectScore' is when 'score is equal to maxScore'. 
+  - marco says: A 'perfectScore' is when 'score is equal to maxScore'.
   - marco says: And a 'lowScore' is when 'score is less than or equal to maxScore divided by two'.
   - hide lessonVarsBooleanCont:
-  - marco says: The boolean operations are really important for the story, as you can use them to branch it. 
+  - marco says: The boolean operations are really important for the story, as you can use them to branch it.
   - marco says: There's a last type of variable. This one is really easy.
   - show lessonVarsString:
   - marco says: This is a character string, or more directly, a string.
@@ -703,7 +703,7 @@ lessonStoryFlux:
   - marco says: Let's see something a bit more complex.
   - show marco: normal
   - show lessonIfCont:
-  - marco says: On this example we can see the condition as a logical operation. 
+  - marco says: On this example we can see the condition as a logical operation.
   - marco says: If that condition is met, we encounter a second 'if'.
   - marco says: This is another operation, but the variables being compared are strings, not numbers.
   - marco says: With strings, we use the '==' operator to check if they're equal.
@@ -718,7 +718,7 @@ lessonStoryFlux:
     - Second 'if?:
       - show marco: worry
       - marco says: Not really.
-  - show marco: normal  
+  - show marco: normal
   - marco says: The indentation level is what marks the right 'if' to pair it with. So that 'else' belongs to the first 'if'.
   - hide lessonIfCont:
   - show marco: normal AT CENTER WITH MOVE
@@ -747,7 +747,7 @@ lastClass:
   - deuzi says: For this lesson, I'll be your teacher.
   - deuzi says: It'll be a lot of fun!
   - show deuzi: normal
-  - effect SHOWTITLE: 
+  - effect SHOWTITLE:
     title: Chapter 6
     subtitle: Graphical User Interface
   - deuzi says: So, a Graphical User Interface, or GUI, constitutes most of the look and feel of your story.
@@ -811,7 +811,7 @@ lastClass:
   - deuzi says: Then we have the choice box.
   - deuzi says: And the interrupt box.
   - deuzi says: If you open the interrupt box image, you'll notice it has 4 frames.
-  - deuzi says: The first two are for the normal interrupt. 
+  - deuzi says: The first two are for the normal interrupt.
   - deuzi says: And the last two are for and interrupt that's just about to disappear.
   - deuzi says: It should look more urgent.
   - hide lessonGUISpritesheets:
@@ -887,7 +887,7 @@ lastClass:
   - deuzi says: But that completes the whole of this course.
   - deuzi says: Now we need to hurry!
   - scene: graduation
-  
+
 graduation:
   - show street_afternoon:
   - show deuzi: AT 300,600 WITH FADE
@@ -937,7 +937,7 @@ invitationScene:
   - jair says: Told you! It's probably Deuzilene trying to convince you to go to that party.
   - choice:
     - Pick up the phone:
-      - deuzi says: Hey! I'm glad you're not asleep yet! 
+      - deuzi says: Hey! I'm glad you're not asleep yet!
       - deuzi says: There's this party tonight and I wanted you to come.
       - deuzi says: So what do you say?
       - choice:
@@ -988,4 +988,3 @@ varsScene:
     - call helloworld:
       param1: hello
       param2: world
-
