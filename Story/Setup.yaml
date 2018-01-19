@@ -55,7 +55,7 @@ setup:
       displayName: Ugandan Knuckles
       speechColour: "#6a2b2b"
       looks:
-        normal:assets/characters/Knuckles.png
+        normal: assets/characters/Knuckles.png
   cgs:
     phone1: assets/objects/phone1.png
     phone2: assets/objects/phone2.png
