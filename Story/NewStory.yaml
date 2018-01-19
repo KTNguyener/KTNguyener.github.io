@@ -1,5 +1,7 @@
 start:
   - show school_morning:
+  - show deuzi: normal AT LEFT WITH FADE
+  - deuzi says: This is a test
   - show knuckles: normal AT CENTER WITH FADE
   - knuckles says: do you know de wey?
   - knuckles says: come brothers. we must find de wey!
