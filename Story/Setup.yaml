@@ -52,7 +52,7 @@ setup:
         happyC: assets/characters/Char4Happy.png
         angryC: assets/characters/Char4Angry.png
     knuckles:
-      displayName: Ugandan Knuckles
+      displayName: Knuckles
       speechColour: "#6a2b2b"
       looks:
         normal: assets/characters/Knuckles.png
