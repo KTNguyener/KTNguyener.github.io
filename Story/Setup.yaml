@@ -62,6 +62,7 @@ setup:
       looks:
         normal: assets/characters/Nova/Nova1Normal.png
         happy: assets/characters/Nova/Nova1Happy.png
+        angry: assets/characters/Nova/Nova1Angry.png
   cgs:
     phone1: assets/objects/phone1.png
     phone2: assets/objects/phone2.png
