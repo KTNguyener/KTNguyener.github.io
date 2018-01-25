@@ -80,7 +80,7 @@ setup:
         laughC: assets/characters/Nova/Nova2Laugh.png
     veronica:
       displayName: Veronica
-      speechColour: "#8e5e23"
+      speechColour: "#4c2f16"
       looks:
         normal: assets/characters/Veronica/Veronica1Normal.png
         happy: assets/characters/Veronica/Veronica1Happy.png
