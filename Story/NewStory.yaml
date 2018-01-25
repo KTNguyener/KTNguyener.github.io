@@ -12,16 +12,16 @@ start:
   - hide knuckles: WITH FADE
   - show veronica: happy AT RIGHT WITH FADE
   - veronica says: Good morning Nova
-  - show nova: normal WITH FADE
+  - show nova: normal
   - nova says: I only wish. Did you see the Ugandan Knuckles?
   - veronica says: Fortunetly, I did not.
-  - show veronica: laugh WITH FADE
+  - show veronica: laugh
   - veronica says: I think your cold exterior must've scared him off.
   - show nova: angry WITH FADE
   - nova says: Oh haha. Very funny.
-  - show veronica: worried WITH FADE
+  - show veronica: worried
   - veronica says: Oh come on, don't be like that. You know I didn't mean anything by it.
-  - nova show: worried WITH FADE
+  - show Nova: worried
   - nova says: I'm sorry. I didn't mean to snap.
   - nova says: It's just that I always associate those traits with the...
   - show nova: angryC WITH FADE
