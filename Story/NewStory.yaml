@@ -1,5 +1,6 @@
 start:
   - show school_morning:
+  - play morningBGM:
   - show nova: normal AT LEFT WITH FADE
   - nova says: This is a test
   - show nova: happy
@@ -16,4 +17,14 @@ start:
   - veronica says: Fortunetly, I did not.
   - show veronica: laugh
   - veronica says: I think your cold exterior must've scared him off.
-  -
+  - show nova: angry
+  - nova says: Oh haha. Very funny.
+  - show veronica: worried
+  - veronica says: Oh come on, don't be like that. You know I didn't mean anything by it.
+  - nova show: worried
+  - nova says: I'm sorry. I didn't mean to snap.
+  - nova says: It's just that I always associate those traits with the...
+  - show nova: angryC
+  - nova says: ...annoying group.
+  - show veronica: surprised
+  - veronica says: So annoyed that your clothes changed.
