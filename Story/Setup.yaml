@@ -58,11 +58,49 @@ setup:
         normal: assets/characters/Knuckles.png
     nova:
       displayName: Nova
-      speechColour: "#6a2b2b"
+      speechColour: "#7a0630"
       looks:
         normal: assets/characters/Nova/Nova1Normal.png
         happy: assets/characters/Nova/Nova1Happy.png
         angry: assets/characters/Nova/Nova1Angry.png
+        sorrow: assets/characters/Nova/Nova1Sorrow.png
+        sad: assets/characters/Nova/Nova1Sad.png
+        surprised: assets/characters/Nova/Nova1Surprised.png
+        worried: assets/characters/Nova/Nova1Worried.png
+        embarressed: assets/characters/Nova/Nova1Embarressed.png
+        laugh: assets/characters/Nova/Nova1Laugh.png
+        normalC: assets/characters/Nova/Nova2Normal.png
+        happyC: assets/characters/Nova/Nova2Happy.png
+        angryC: assets/characters/Nova/Nova2Angry.png
+        sorrowC: assets/characters/Nova/Nova2Sorrow.png
+        sadC: assets/characters/Nova/Nova2Sad.png
+        surprisedC: assets/characters/Nova/Nova2Surprised.png
+        worriedC: assets/characters/Nova/Nova2Worried.png
+        embarressedC: assets/characters/Nova/Nova2Embarressed.png
+        laughC: assets/characters/Nova/Nova2Laugh.png
+    veronica:
+      displayName: Veronica
+      speechColour: "#8e5e23"
+      looks:
+        normal: assets/characters/Veronica/Veronica1Normal.png
+        happy: assets/characters/Veronica/Veronica1Happy.png
+        angry: assets/characters/Veronica/Veronica1Angry.png
+        sorrow: assets/characters/Veronica/Veronica1Sorrow.png
+        sad: assets/characters/Veronica/Veronica1Sad.png
+        surprised: assets/characters/Veronica/Veronica1Surprised.png
+        worried: assets/characters/Veronica/Veronica1Worried.png
+        embarressed: assets/characters/Veronica/Veronica1Embarressed.png
+        laugh: assets/characters/Veronica/Veronica1Laugh.png
+        normalC: assets/characters/Veronica/Veronica2Normal.png
+        happyC: assets/characters/Veronica/Veronica2Happy.png
+        angryC: assets/characters/Veronica/Veronica2Angry.png
+        sorrowC: assets/characters/Veronica/Veronica2Sorrow.png
+        sadC: assets/characters/Veronica/Veronica2Sad.png
+        surprisedC: assets/characters/Veronica/Veronica2Surprised.png
+        worriedC: assets/characters/Veronica/Veronica2Worried.png
+        embarressedC: assets/characters/Veronica/Veronica2Embarressed.png
+        laughC: assets/characters/Veronica/Veronica2Laugh.png
+
   cgs:
     phone1: assets/objects/phone1.png
     phone2: assets/objects/phone2.png
