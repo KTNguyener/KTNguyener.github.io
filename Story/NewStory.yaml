@@ -8,3 +8,12 @@ start:
   - knuckles says: come brothers. we must find de wey!
   - show nova: angry
   - nova says: Oh god...Not again
+  - hide knuckles: WITH FADE
+  - show veronica: happy AT RIGHT WITH FADE
+  - veronica says: Good morning Nova
+  - show nova: normal
+  - nova says: I only wish. Did you see the Ugandan Knuckles?
+  - veronica says: Fortunetly, I did not.
+  - show veronica: laugh
+  - veronica says: I think your cold exterior must've scared him off.
+  -
