@@ -100,6 +100,50 @@ setup:
         worriedC: assets/characters/Veronica/Veronica2Worried.png
         embarressedC: assets/characters/Veronica/Veronica2Embarressed.png
         laughC: assets/characters/Veronica/Veronica2Laugh.png
+    jax:
+      displayName: Jax
+      speechColour: "#001538"
+      looks:
+        normal: assets/characters/Jax/Jax1Normal.png
+        happy: assets/characters/Jax/Jax1Happy.png
+        angry: assets/characters/Jax/Jax1Angry.png
+        sorrow: assets/characters/Jax/Jax1Sorrow.png
+        sad: assets/characters/Jax/Jax1Sad.png
+        surprised: assets/characters/Jax/Jax1Surprised.png
+        worried: assets/characters/Jax/Jax1Worried.png
+        embarressed: assets/characters/Jax/Jax1Embarressed.png
+        laugh: assets/characters/Jax/Jax1Laugh.png
+        normalC: assets/characters/Jax/Jax2Normal.png
+        happyC: assets/characters/Jax/Jax2Happy.png
+        angryC: assets/characters/Jax/Jax2Angry.png
+        sorrowC: assets/characters/Jax/Jax2Sorrow.png
+        sadC: assets/characters/Jax/Jax2Sad.png
+        surprisedC: assets/characters/Jax/Jax2Surprised.png
+        worriedC: assets/characters/Jax/Jax2Worried.png
+        embarressedC: assets/characters/Jax/Jax2Embarressed.png
+        laughC: assets/characters/Jax/Jax2Laugh.png
+    eli:
+      displayName: Elijah
+      speechColour: "#600c00"
+      looks:
+        normal: assets/characters/Eli/Eli1Normal.png
+        happy: assets/characters/Eli/Eli1Happy.png
+        angry: assets/characters/Eli/Eli1Angry.png
+        sorrow: assets/characters/Eli/Eli1Sorrow.png
+        sad: assets/characters/Eli/Eli1Sad.png
+        surprised: assets/characters/Eli/Eli1Surprised.png
+        worried: assets/characters/Eli/Eli1Worried.png
+        embarressed: assets/characters/Eli/Eli1Embarressed.png
+        laugh: assets/characters/Eli/Eli1Laugh.png
+        normalC: assets/characters/Eli/Eli2Normal.png
+        happyC: assets/characters/Eli/Eli2Happy.png
+        angryC: assets/characters/Eli/Eli2Angry.png
+        sorrowC: assets/characters/Eli/Eli2Sorrow.png
+        sadC: assets/characters/Eli/Eli2Sad.png
+        surprisedC: assets/characters/Eli/Eli2Surprised.png
+        worriedC: assets/characters/Eli/Eli2Worried.png
+        embarressedC: assets/characters/Eli/Eli2Embarressed.png
+        laughC: assets/characters/Eli/Eli2Laugh.png
 
   cgs:
     phone1: assets/objects/phone1.png
