@@ -11,6 +11,7 @@ start:
 selection:
   - show school_morning:
   - play morningBGM:
+  - var veronica: 2
   - choice:
     - Veronica:
       - if ({veronica == 2}):
