@@ -6,9 +6,9 @@ var phaserConfig = {
   loading: "assets/gui/loadingbar.png", //loading bar image
   loadingPosition: [111,462], //loading bar size
   storyFiles: [
-        "Story/NewStory.yaml",
+        "Story/NewStory2.yaml",
         "Story/GUI.yaml",
-        "Story/Setup.yaml",
+        "Story/Setup2.yaml",
 
     ],
 }

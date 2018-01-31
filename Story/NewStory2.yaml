@@ -1,0 +1,41 @@
+start:
+  - show school_morning:
+  - play morningBGM:
+  - var veronica: 0
+  - var nova: 0
+  - var jax: 0
+  - var eli: 0
+  - skylar says: This would be day one.
+  - scene: selection
+
+selection:
+  - show school_morning:
+  - play morningBGM:
+  - choice:
+    - Veronica:
+      - if ({veronica == 2}):
+        - skylar says: She doesn't want to see me.
+        - scene: selection
+      - else:
+        - if ({veronica == 0}):
+          - scene: veronica1
+        - else:
+          - scene: veronica2
+
+    - Jax:
+    - Elijah:
+    - Nova:
+
+veronica1:
+  - show school_morning:
+  - play morningBGM:
+  - text: This is veronica 1. Adding a relationship point.
+  - var veronica: 1
+  - scene: selection
+
+veronica2:
+  - show school_morning:
+  - play morningBGM:
+  - text: This is veronica 2. Adding a relationship point.
+  - var veronica: 2
+  - scene: selection
