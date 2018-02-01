@@ -15,7 +15,7 @@ selection:
   - var nica: 2
   - choice:
     - Veronica:
-      - if ({nica == 2}):
+      - if ({nica >= 2}):
         - skylar says: She doesn't want to see me.
         - scene: selection
       - else:
