@@ -11,15 +11,14 @@ start:
 selection:
   - show school_morning:
   - play morningBGM:
-  - text: Your have "{nica}" points
-  - var nica: 2
+  - text: You have {nica} points
   - choice:
     - Veronica:
       - if ({nica >= 2}):
         - skylar says: She doesn't want to see me.
         - scene: selection
       - else:
-        - if ({nica == 0}):
+        - if ({nica < 1}):
           - scene: veronica1
         - else:
           - scene: veronica2
