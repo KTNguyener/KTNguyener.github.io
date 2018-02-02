@@ -35,7 +35,6 @@ selection:
   - play morningBGM:
   - var nica: "{nica} + 1"
   - text: You have {nica} points
-<<<<<<< HEAD
   - var nicaStranger: "{nica} == 0"
   - var nicaAquaintence: "{nica} == 1"
   - var nicaFriend: "{nica} == 2"
@@ -47,16 +46,6 @@ selection:
       - if ({nicaStranger}):
         - scene: veronica1
       - if ({nicaAquaintence}):
-=======
-  - choice:
-    - Veronica:
-      - if ({nica >= 2}):
-        - skylar says: She doesn't want to see me.
-        - scene: selection
-      - if ({nica < 1}):
-        - scene: veronica1
-      - if ({nica == 1}):
->>>>>>> 89595d07653553de4c4637f912d4479020e3d3f9
           - scene: veronica2
 
     - Jax:
