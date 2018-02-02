@@ -1,20 +1,11 @@
 start:
   - show school_morning:
   - play morningBGM:
-  - text: version 1.0.3
+  - text: version 1.0.4
   - var nica: 0
   - var nova: 0
   - var jax: 0
   - var eli: 0
-  - var day2: "{day} == 2"
-  - var day3: "{day} == 3"
-  - var day4: "{day} == 4"
-  - var day5: "{day} == 5"
-  - var day6: "{day} == 6"
-  - var day7: "{day} == 7"
-  - var day8: "{day} == 8"
-  - var day9: "{day} == 9"
-  - var day10: "{day} == 10"
   - var day: 2
   - skylar says: This would be day one.
   - scene: selection
@@ -133,21 +124,21 @@ veronica1:
   - text: It is day {day}
   - if ({day} == 2):
     - scene: day2
-  - if ({day3}):
+  - if ({day} == 3):
     - scene: day3
-  - if ({day4}):
+  - if ({day} == 4):
     - scene: day4
-  - if ({day5}):
+  - if ({day} == 5):
     - scene: day5
-  - if ({day6}):
+  - if ({day} == 6):
     - scene: day6
-  - if ({day7}):
+  - if ({day} == 7):
     - scene: day7
-  - if ({day8}):
+  - if ({day} == 8):
     - scene: day8
-  - if ({day9}):
+  - if ({day} == 9):
     - scene: day9
-  - if ({day10}):
+  - if ({day} == 10):
     - scene: day10
 
 veronica2:
@@ -157,21 +148,168 @@ veronica2:
   - var nica: "{nica} + 1"
   - if ({day} == 2):
     - scene: day2
-  - if ({day3}):
+  - if ({day} == 3):
     - scene: day3
-  - if ({day4}):
+  - if ({day} == 4):
     - scene: day4
-  - if ({day5}):
+  - if ({day} == 5):
     - scene: day5
-  - if ({day6}):
+  - if ({day} == 6):
     - scene: day6
-  - if ({day7}):
+  - if ({day} == 7):
     - scene: day7
-  - if ({day8}):
+  - if ({day} == 8):
     - scene: day8
-  - if ({day9}):
+  - if ({day} == 9):
     - scene: day9
-  - if ({day10}):
+  - if ({day} == 10):
+    - scene: day10
+
+jax1:
+  - show school_morning:
+  - play morningBGM:
+  - text: This is jax 1. Adding a relationship point.
+  - var jax: "{jax} + 1"
+  - text: It is day {day}
+  - if ({day} == 2):
+    - scene: day2
+  - if ({day} == 3):
+    - scene: day3
+  - if ({day} == 4):
+    - scene: day4
+  - if ({day} == 5):
+    - scene: day5
+  - if ({day} == 6):
+    - scene: day6
+  - if ({day} == 7):
+    - scene: day7
+  - if ({day} == 8):
+    - scene: day8
+  - if ({day} == 9):
+    - scene: day9
+  - if ({day} == 10):
+    - scene: day10
+
+jax2:
+  - show school_morning:
+  - play morningBGM:
+  - text: This is jax 2. Adding a relationship point.
+  - var jax: "{jax} + 1"
+  - if ({day} == 2):
+    - scene: day2
+  - if ({day} == 3):
+    - scene: day3
+  - if ({day} == 4):
+    - scene: day4
+  - if ({day} == 5):
+    - scene: day5
+  - if ({day} == 6):
+    - scene: day6
+  - if ({day} == 7):
+    - scene: day7
+  - if ({day} == 8):
+    - scene: day8
+  - if ({day} == 9):
+    - scene: day9
+  - if ({day} == 10):
+    - scene: day10
+
+eli1:
+  - show school_morning:
+  - play morningBGM:
+  - text: This is eli 1. Adding a relationship point.
+  - var eli: "{eli} + 1"
+  - text: It is day {day}
+  - if ({day} == 2):
+    - scene: day2
+  - if ({day} == 3):
+    - scene: day3
+  - if ({day} == 4):
+    - scene: day4
+  - if ({day} == 5):
+    - scene: day5
+  - if ({day} == 6):
+    - scene: day6
+  - if ({day} == 7):
+    - scene: day7
+  - if ({day} == 8):
+    - scene: day8
+  - if ({day} == 9):
+    - scene: day9
+  - if ({day} == 10):
+    - scene: day10
+
+eli2:
+  - show school_morning:
+  - play morningBGM:
+  - text: This is eli 2. Adding a relationship point.
+  - var eli: "{eli} + 1"
+  - if ({day} == 2):
+    - scene: day2
+  - if ({day} == 3):
+    - scene: day3
+  - if ({day} == 4):
+    - scene: day4
+  - if ({day} == 5):
+    - scene: day5
+  - if ({day} == 6):
+    - scene: day6
+  - if ({day} == 7):
+    - scene: day7
+  - if ({day} == 8):
+    - scene: day8
+  - if ({day} == 9):
+    - scene: day9
+  - if ({day} == 10):
+    - scene: day10
+
+nova1:
+  - show school_morning:
+  - play morningBGM:
+  - text: This is nova 1. Adding a relationship point.
+  - var nova: "{nova} + 1"
+  - text: It is day {day}
+  - if ({day} == 2):
+    - scene: day2
+  - if ({day} == 3):
+    - scene: day3
+  - if ({day} == 4):
+    - scene: day4
+  - if ({day} == 5):
+    - scene: day5
+  - if ({day} == 6):
+    - scene: day6
+  - if ({day} == 7):
+    - scene: day7
+  - if ({day} == 8):
+    - scene: day8
+  - if ({day} == 9):
+    - scene: day9
+  - if ({day} == 10):
+    - scene: day10
+
+nova2:
+  - show school_morning:
+  - play morningBGM:
+  - text: This is nova 2. Adding a relationship point.
+  - var nova: "{nova} + 1"
+  - if ({day} == 2):
+    - scene: day2
+  - if ({day} == 3):
+    - scene: day3
+  - if ({day} == 4):
+    - scene: day4
+  - if ({day} == 5):
+    - scene: day5
+  - if ({day} == 6):
+    - scene: day6
+  - if ({day} == 7):
+    - scene: day7
+  - if ({day} == 8):
+    - scene: day8
+  - if ({day} == 9):
+    - scene: day9
+  - if ({day} == 10):
     - scene: day10
 
 end1:
