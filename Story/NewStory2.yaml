@@ -1,6 +1,4 @@
-start/day1:
-  #This is the start of the game. It will have an intro scene.
-  #It will also go overall of the character introductions
+start:
   - show school_morning:
   - play morningBGM:
   - var nica: 0
