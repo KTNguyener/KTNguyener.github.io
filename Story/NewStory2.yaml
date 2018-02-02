@@ -1,6 +1,7 @@
 start:
   - show school_morning:
   - play morningBGM:
+  - text: version 1.0
   - var nica: 0
   - var nova: 0
   - var jax: 0
