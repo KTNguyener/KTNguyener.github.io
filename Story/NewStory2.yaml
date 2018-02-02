@@ -89,14 +89,14 @@ veronica1:
   - play morningBGM:
   - text: This is veronica 1. Adding a relationship point.
   - var nica: "{nica} + 1"
-  - scene: {day}
+  - scene: "{day}"
 
 veronica2:
   - show school_morning:
   - play morningBGM:
   - text: This is veronica 2. Adding a relationship point.
   - var nica: "{nica} + 1"
-  - scene: {day}
+  - scene: "{day}"
 
 end1:
 
