@@ -63,6 +63,7 @@ day10:
   - show school_morning:
   - skylar says: This would be day 10
   - skylar says: At this point, the ending will be determined
+  - text: Your final score is {finalScore}
   - if({finalScore} <= 1):
     - text: Worst end
   - if({finalScore} <= 3):
