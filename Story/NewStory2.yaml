@@ -1,36 +1,76 @@
 start:
   - show school_morning:
   - play morningBGM:
-  - text: version 1.0
+  - text: version 1.0.1
   - var nica: 0
   - var nova: 0
   - var jax: 0
   - var eli: 0
-  - var day: day2
+  - var day2: "{day} == 2"
+  - var day3: "{day} == 3"
+  - var day4: "{day} == 4"
+  - var day5: "{day} == 5"
+  - var day6: "{day} == 6"
+  - var day7: "{day} == 7"
+  - var day8: "{day} == 8"
+  - var day9: "{day} == 9"
+  - var day10: "{day} == 10"
+  - var day: 2
   - skylar says: This would be day one.
   - scene: selection
 
 day2:
   - show school_morning:
-  - var day: day3
+  - var day: 3
   - skylar says: This would be day two.
   - scene: selection
 
 day3:
+  - show school_morning:
+  - var day: 4
+  - skylar says: This would be day three.
+  - scene: selection
 
 day4:
+  - show school_morning:
+  - var day: 5
+  - skylar says: This would be day four.
+  - scene: selection
 
 day5:
+  - show school_morning:
+  - var day: 6
+  - skylar says: This would be day five.
+  - scene: selection
 
 day6:
+  - show school_morning:
+  - var day: 7
+  - skylar says: This would be day six.
+  - scene: selection
 
 day7:
+  - show school_morning:
+  - var day: 8
+  - skylar says: This would be day seven.
+  - scene: selection
 
 day8:
+  - show school_morning:
+  - var day: 9
+  - skylar says: This would be day eight.
+  - scene: selection
 
 day9:
+  - show school_morning:
+  - var day: 10
+  - skylar says: This would be day nine.
+  - scene: selection
 
 day10:
+  - show school_morning:
+  - skylar says: This would be day 10
+  - skylar says: At this point, the ending will be determined
 
 
 
@@ -90,14 +130,48 @@ veronica1:
   - play morningBGM:
   - text: This is veronica 1. Adding a relationship point.
   - var nica: "{nica} + 1"
-  - scene: "{day}"
+  - if ({day2}):
+    - scene: day2
+  - if ({day3}):
+    - scene: day3
+  - if ({day4}):
+    - scene: day4
+  - if ({day5}):
+    - scene: day5
+  - if ({day6}):
+    - scene: day6
+  - if ({day7}):
+    - scene: day7
+  - if ({day8}):
+    - scene: day8
+  - if ({day9}):
+    - scene: day9
+  - if ({day10}):
+    - scene: day10
 
 veronica2:
   - show school_morning:
   - play morningBGM:
   - text: This is veronica 2. Adding a relationship point.
   - var nica: "{nica} + 1"
-  - scene: "{day}"
+  - if ({day2}):
+    - scene: day2
+  - if ({day3}):
+    - scene: day3
+  - if ({day4}):
+    - scene: day4
+  - if ({day5}):
+    - scene: day5
+  - if ({day6}):
+    - scene: day6
+  - if ({day7}):
+    - scene: day7
+  - if ({day8}):
+    - scene: day8
+  - if ({day9}):
+    - scene: day9
+  - if ({day10}):
+    - scene: day10
 
 end1:
 
