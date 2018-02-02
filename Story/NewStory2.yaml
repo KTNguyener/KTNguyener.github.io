@@ -18,10 +18,9 @@ selection:
       - if ({nica >= 2}):
         - skylar says: She doesn't want to see me.
         - scene: selection
-      - else:
-        - if ({nica < 1}):
-          - scene: veronica1
-        - else:
+      - if ({nica < 1}):
+        - scene: veronica1
+      - if ({nica == 1}):
           - scene: veronica2
 
     - Jax:
