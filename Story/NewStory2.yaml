@@ -1,14 +1,14 @@
 start:
   - show school_morning:
   - play morningBGM:
-  - text: version 1.0.4
+  - text: version 1.0.5
   - var nica: 0
   - var nova: 0
   - var jax: 0
   - var eli: 0
   - var day: 2
-  - skylar says: This would be day one.
-  - scene: selection
+  - skylar says: This would be day one. No selection yet
+  - scene: day2
 
 day2:
   - show school_morning:
@@ -90,7 +90,6 @@ selection:
         - scene: veronica1
       - if ({nicaAquaintence}):
         - scene: veronica2
-
     - Jax:
       - if ({jaxFriend}):
         - skylar says: He doesn't want to see me.
