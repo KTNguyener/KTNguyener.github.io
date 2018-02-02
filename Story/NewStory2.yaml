@@ -11,6 +11,7 @@ start:
 selection:
   - show school_morning:
   - play morningBGM:
+  - var nica: "{nica} + 1"
   - text: You have {nica} points
   - choice:
     - Veronica:
@@ -31,12 +32,12 @@ veronica1:
   - show school_morning:
   - play morningBGM:
   - text: This is veronica 1. Adding a relationship point.
-  - var veronica: "{nica} + 1"
+  - var nica: "{nica} + 1"
   - scene: selection
 
 veronica2:
   - show school_morning:
   - play morningBGM:
   - text: This is veronica 2. Adding a relationship point.
-  - var veronica: "{nica} + 1"
+  - var nica: "{nica} + 1"
   - scene: selection
