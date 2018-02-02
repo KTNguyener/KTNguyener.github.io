@@ -1,7 +1,7 @@
 start:
   - show school_morning:
   - play morningBGM:
-  - text: version 1.0.1
+  - text: version 1.0.2
   - var nica: 0
   - var nova: 0
   - var jax: 0
@@ -130,6 +130,7 @@ veronica1:
   - play morningBGM:
   - text: This is veronica 1. Adding a relationship point.
   - var nica: "{nica} + 1"
+  - text: It is day {day}
   - if ({day2}):
     - scene: day2
   - if ({day3}):
