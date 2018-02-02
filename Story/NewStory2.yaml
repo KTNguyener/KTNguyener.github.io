@@ -5,10 +5,15 @@ start:
   - var nova: 0
   - var jax: 0
   - var eli: 0
+  - var day: day2
   - skylar says: This would be day one.
   - scene: selection
 
 day2:
+  - show school_morning:
+  - var day: day3
+  - skylar says: This would be day two.
+  - scene: selection
 
 day3:
 
@@ -35,6 +40,15 @@ selection:
   - var nicaStranger: "{nica} == 0"
   - var nicaAquaintence: "{nica} == 1"
   - var nicaFriend: "{nica} == 2"
+  - var jaxStranger: "{jax} == 0"
+  - var jaxAquaintence: "{jax} == 1"
+  - var jaxFriend: "{jax} == 2"
+  - var eliStranger: "{eli} == 0"
+  - var eliAquaintence: "{eli} == 1"
+  - var eliFriend: "{eli} == 2"
+  - var novaStranger: "{nova} == 0"
+  - var novaAquaintence: "{nova} == 1"
+  - var novaFriend: "{nova} == 2"
   - choice:
     - Veronica:
       - if ({nicaFriend}):
@@ -43,49 +57,46 @@ selection:
       - if ({nicaStranger}):
         - scene: veronica1
       - if ({nicaAquaintence}):
-          - scene: veronica2
+        - scene: veronica2
 
     - Jax:
-      - if ({jax == 2}):
+      - if ({jaxFriend}):
         - skylar says: He doesn't want to see me.
         - scene: selection
-        else:
-          - if ({jax == 0}):
-            - scene: jax1
-          - else:
-            - scene: jax2
+      - if ({jaxStranger}):
+        - scene: jax1
+      - if ({jaxAquaintence}):
+        - scene: jax2
     - Elijah:
-      - if ({eli == 2}):
+      - if ({eliFriend}):
         - skylar says: He doesn't want to see me.
         - scene: selection
-        else:
-          - if ({eli == 0}):
-            - scene: eli1
-          - else:
-            - scene: eli2
+      - if ({eliStranger}):
+        - scene: eli1
+      - if ({eliAquaintence}):
+        - scene: eli2
     - Nova:
-      - if ({nova == 2}):
+      - if ({novaFriend}):
         - skylar says: She doesn't want to see me.
         - scene: selection
-        else:
-          - if ({nova == 0}):
-            - scene: nova1
-          - else:
-            - scene: nova2
+      - if ({novaStranger}):
+          - scene: nova1
+      - if ({novaAquaintence}):
+          - scene: nova2
 
 veronica1:
   - show school_morning:
   - play morningBGM:
   - text: This is veronica 1. Adding a relationship point.
   - var nica: "{nica} + 1"
-  - scene: selection
+  - scene: {day}
 
 veronica2:
   - show school_morning:
   - play morningBGM:
   - text: This is veronica 2. Adding a relationship point.
   - var nica: "{nica} + 1"
-  - scene: selection
+  - scene: {day}
 
 end1:
 
