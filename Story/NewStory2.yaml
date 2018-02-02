@@ -64,15 +64,15 @@ day10:
   - skylar says: This would be day 10
   - skylar says: At this point, the ending will be determined
   - text: Your final score is {finalScore}
-  - if({finalScore} <= 1):
+  - if ({finalScore} <= 1):
     - text: Worst end
-  - if({finalScore} <= 3):
+  - if ({finalScore} <= 3):
     - text: Bad end
-  - if({finalScore} <= 5):
+  - if ({finalScore} <= 5):
     - text: Normal end
-  - if({finalScore} <= 7):
+  - if ({finalScore} <= 7):
     - text: Good end
-  - if({finalScore} == 8):
+  - if ({finalScore} == 8):
     - text: Best end
 
 
