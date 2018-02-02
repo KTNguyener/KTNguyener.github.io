@@ -1,12 +1,13 @@
 start:
   - show school_morning:
   - play morningBGM:
-  - text: version 1.0.5
+  - text: version 1.0.6
   - var nica: 0
   - var nova: 0
   - var jax: 0
   - var eli: 0
   - var day: 2
+  - var finalScore: 0
   - skylar says: This would be day one. No selection yet
   - scene: day2
 
@@ -62,6 +63,16 @@ day10:
   - show school_morning:
   - skylar says: This would be day 10
   - skylar says: At this point, the ending will be determined
+  - if({finalScore} <= 1):
+    - text: Worst end
+  - if({finalScore} <= 3):
+    - text: Bad end
+  - if({finalScore} <= 5):
+    - text: Normal end
+  - if({finalScore} <= 7):
+    - text: Good end
+  - if({finalScore} == 8):
+    - text: Best end
 
 
 
@@ -118,9 +129,16 @@ selection:
 veronica1:
   - show school_morning:
   - play morningBGM:
-  - text: This is veronica 1. Adding a relationship point.
-  - var nica: "{nica} + 1"
-  - text: It is day {day}
+  - text: This is veronica 1.
+  - text: It is day {day}.
+  - choice:
+    - Right Choice:
+      - skylar says: That went well.
+      - var nica: "{nica} + 1"
+      - var finalScore: "{finalScore} + 1"
+    - Wrong Choice:
+      - skylar says: That could've gone better.
+      - var nica: 2
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
@@ -143,8 +161,16 @@ veronica1:
 veronica2:
   - show school_morning:
   - play morningBGM:
-  - text: This is veronica 2. Adding a relationship point.
-  - var nica: "{nica} + 1"
+  - text: This is veronica 2.
+  - text: It is day {day}.
+  - choice:
+    - Right Choice:
+      - skylar says: That went well.
+      - var nica: "{nica} + 1"
+      - var finalScore: "{finalScore} + 1"
+    - Wrong Choice:
+      - skylar says: That could've gone better.
+      - var nica: 2
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
@@ -167,9 +193,16 @@ veronica2:
 jax1:
   - show school_morning:
   - play morningBGM:
-  - text: This is jax 1. Adding a relationship point.
-  - var jax: "{jax} + 1"
-  - text: It is day {day}
+  - text: This is jax 1.
+  - text: It is day {day}.
+  - choice:
+    - Right Choice:
+      - skylar says: That went well.
+      - var jax: "{jax} + 1"
+      - var finalScore: "{finalScore} + 1"
+    - Wrong Choice:
+      - skylar says: That could've gone better.
+      - var jax: 2
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
@@ -192,8 +225,16 @@ jax1:
 jax2:
   - show school_morning:
   - play morningBGM:
-  - text: This is jax 2. Adding a relationship point.
-  - var jax: "{jax} + 1"
+  - text: This is jax 2.
+  - text: It is day {day}.
+  - choice:
+    - Right Choice:
+      - skylar says: That went well.
+      - var jax: "{jax} + 1"
+      - var finalScore: "{finalScore} + 1"
+    - Wrong Choice:
+      - skylar says: That could've gone better.
+      - var jax: 2
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
@@ -216,9 +257,16 @@ jax2:
 eli1:
   - show school_morning:
   - play morningBGM:
-  - text: This is eli 1. Adding a relationship point.
-  - var eli: "{eli} + 1"
-  - text: It is day {day}
+  - text: This is eli 1.
+  - text: It is day {day}.
+  - choice:
+    - Right Choice:
+      - skylar says: That went well.
+      - var eli: "{eli} + 1"
+      - var finalScore: "{finalScore} + 1"
+    - Wrong Choice:
+      - skylar says: That could've gone better.
+      - var eli: 2
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
@@ -241,8 +289,16 @@ eli1:
 eli2:
   - show school_morning:
   - play morningBGM:
-  - text: This is eli 2. Adding a relationship point.
-  - var eli: "{eli} + 1"
+  - text: This is eli 2.
+  - text: It is day {day}.
+  - choice:
+    - Right Choice:
+      - skylar says: That went well.
+      - var eli: "{eli} + 1"
+      - var finalScore: "{finalScore} + 1"
+    - Wrong Choice:
+      - skylar says: That could've gone better.
+      - var eli: 2
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
@@ -265,9 +321,16 @@ eli2:
 nova1:
   - show school_morning:
   - play morningBGM:
-  - text: This is nova 1. Adding a relationship point.
-  - var nova: "{nova} + 1"
-  - text: It is day {day}
+  - text: This is nova 1.
+  - text: It is day {day}.
+  - choice:
+    - Right Choice:
+      - skylar says: That went well.
+      - var nova: "{nova} + 1"
+      - var finalScore: "{finalScore} + 1"
+    - Wrong Choice:
+      - skylar says: That could've gone better.
+      - var nova: 2
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
@@ -290,8 +353,16 @@ nova1:
 nova2:
   - show school_morning:
   - play morningBGM:
-  - text: This is nova 2. Adding a relationship point.
-  - var nova: "{nova} + 1"
+  - text: This is nova 2.
+  - text: It is day {day}.
+  - choice:
+    - Right Choice:
+      - skylar says: That went well.
+      - var nova: "{nova} + 1"
+      - var finalScore: "{finalScore} + 1"
+    - Wrong Choice:
+      - skylar says: That could've gone better.
+      - var nova: 2
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
