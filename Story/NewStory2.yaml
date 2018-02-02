@@ -31,7 +31,6 @@ day10:
 selection:
   - show school_morning:
   - play morningBGM:
-  - var nica: "{nica} + 1"
   - text: You have {nica} points
   - var nicaStranger: "{nica} == 0"
   - var nicaAquaintence: "{nica} == 1"
