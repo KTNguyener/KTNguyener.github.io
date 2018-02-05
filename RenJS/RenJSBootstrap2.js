@@ -7,7 +7,7 @@ var phaserConfig = {
   loadingPosition: [111,462], //loading bar size
   storyFiles: [
         "Story/NewStory2.yaml",
-        "Story/GUI2.yaml",
+        "Story/GUI.yaml",
         "Story/Setup2.yaml",
 
     ],
