@@ -93,6 +93,13 @@ selection:
   - var novaStranger: "{nova} == 0"
   - var novaAquaintence: "{nova} == 1"
   - var novaFriend: "{nova} == 2"
+  - if ({nicaFriend} && {jaxFriend} && {eliFriend} && {novaFriend})
+    - skylar says: Nobody wants to hang out today.
+    - skylar says: I guess I have alienated too many people.
+    - skylar says: Nothing to do but go home, I guess.
+    - skylar says: Days pass by in a blur now. A simple cycle of eat, sleep, and school.
+    - skylar says: Before I knew it, a fateful day had arrived.
+    - scene: day10
   - choice:
     - Veronica:
       - if ({nicaFriend}):
