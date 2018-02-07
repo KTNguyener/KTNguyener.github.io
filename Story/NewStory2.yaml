@@ -1,5 +1,5 @@
 start:
-  - show classroom_day:
+  - show room_day:
   - play morningBGM:
   - text: version 1.0.10
   - var nica: 0
@@ -8,7 +8,21 @@ start:
   - var eli: 0
   - var day: 2
   - var finalScore: 0
-  - skylar says: This would be day one. No selection yet
+  - skylar says: This is it, I guess.
+  - skylar says: Last semester of senior year
+  - skylar says: Of course my parents had us move to the islands in the middle of the year.
+  - skylar says: Then again, I've never lived in one place for more than a few years...
+  - skylar says: So I should've expected something like this to happen. Especially with dad's job.
+  - skylar says: Well, no use moping around. I can smell breakfast already
+  - show living_day:
+  - skylar says: Eggs and bacon. My favorite. I wonder what's on the news?
+  - news says: In other news, tensions continue to rise between our two nations and insults are traded over social media.
+  - news says: While most of the populace has refused to take the Dictator seriously, making memes of him instead...
+  - news says: The President assures us that the Dictator is a very real threat.
+  - skylar says: Yeah...not touching that. Too depressing. Better head to school.
+  - show front_day:
+  - skylar says: Thank god I visited here over winter break, otherwise I would be completely loss.
+  - skylar says: Better head straight to art. No need to converse with strangers.
   - scene: day2
 
 day2:

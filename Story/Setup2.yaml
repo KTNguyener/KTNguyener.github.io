@@ -28,13 +28,23 @@ setup:
     street_afternoon: assets/backgrounds/school_front_afternoon.jpg
     store: assets/backgrounds/store.jpg
   characters:
-    knuckles:
-      displayName: Knuckles
-      speechColour: "#6a2b2b"
+    news:
+      displayName: Newscaster
+      speechColour: "#000000"
       looks:
         normal: assets/characters/Knuckles.png
     skylar:
       displayName: Skylar
+      speechColour: "#6a2b2b"
+      looks:
+        normal: assets/characters/Nova/Nova1Normal.png
+    mom:
+      displayName: Mom
+      speechColour: "#6a2b2b"
+      looks:
+        normal: assets/characters/Nova/Nova1Normal.png
+    dad:
+      displayName: Dad
       speechColour: "#6a2b2b"
       looks:
         normal: assets/characters/Nova/Nova1Normal.png
