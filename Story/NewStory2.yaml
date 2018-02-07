@@ -1,7 +1,7 @@
 start:
-  - show school_morning:
+  - show classroom_day:
   - play morningBGM:
-  - text: version 1.0.9
+  - text: version 1.0.10
   - var nica: 0
   - var nova: 0
   - var jax: 0
@@ -12,7 +12,7 @@ start:
   - scene: day2
 
 day2:
-  - show school_morning:
+  - show classroom_night:
   - var day: 3
   - skylar says: This would be day two.
   - scene: selection
