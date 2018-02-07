@@ -1,7 +1,7 @@
 start:
   - show room_day:
   - play morningBGM:
-  - text: version 1.0.10
+  - text: version 1.0.11
   - var nica: 0
   - var nova: 0
   - var jax: 0
@@ -15,11 +15,27 @@ start:
   - skylar says: So I should've expected something like this to happen. Especially with dad's job.
   - skylar says: Well, no use moping around. I can smell breakfast already
   - show living_day:
-  - skylar says: Eggs and bacon. My favorite. I wonder what's on the news?
+  - skylar says: Morning mom! Morning Dad!
+  - dad says: Hey Sky! Ready for school?
+  - mom says: Of course not! Not without breakfast!
+  - skylar says: Eggs and bacon. My favorite!
+  - mom says: It is technically your first day back at school. You need all the strength you can get.
+  - dad says: Hey Sky, can you hit the TV? I need to see what the news is.
+  - skylar says: Sure thing dad.
   - news says: In other news, tensions continue to rise between our two nations and insults are traded over social media.
   - news says: While most of the populace has refused to take the Dictator seriously, making memes of him instead...
   - news says: The President assures us that the Dictator is a very real threat.
-  - skylar says: Yeah...not touching that. Too depressing. Better head to school.
+  - skylar says: Dad instantly looks more on edge. Him and mom try to speak softly, but I still hear them.
+  - dad says: He really just wants to make international relationships harder.
+  - mom says: Don't let it get to you dear.
+  - dad says: I know honey, but it is aggravating to see the words of one man destroy years of my team's work.
+  - mom says: There's a reason why you're the best, dear. Even during these times, you still hold your composure.
+  - dad says: Only because I know that you and Sky are waiting home for me every day.
+  - mom says: We'll always be there for you. Now you go on out and save the world.
+  - dad says: Yes Ma'am. Sky! You ready to go?
+  - skylar says: Yeah. In fact, I'm outside the door!
+  - dad says: Wait, hold up!
+  - mom says: Have a good day you two!
   - show front_day:
   - skylar says: Thank god I visited here over winter break, otherwise I would be completely loss.
   - skylar says: Better head straight to art. No need to converse with strangers.
