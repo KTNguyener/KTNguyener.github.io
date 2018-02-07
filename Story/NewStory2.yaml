@@ -37,8 +37,44 @@ start:
   - dad says: Wait, hold up!
   - mom says: Have a good day you two!
   - show front_day:
-  - skylar says: Thank god I visited here over winter break, otherwise I would be completely loss.
+  - dad says: Hey Skylar. Are you gonna be okay?
+  - skylar says: Don't worry about me dad. I've done this eight times already.
+  - dad says: I know it's hard moving and making new friends, and it's hard getting used to new places every time, and it-
+  - skylar says: Dad! Like I said, don't worry about me. It'll be just like any other move.
+  - dad says: Alright, alright, alright. You know where to go?
+  - skylar says: Yeah. Thank god we visited school over winter break, or I would be lost.
+  - dad says: Okay then. I'll see you soon. Have a good first day!
+  - skylar says: I wave to him as he drives off before looking towards the entrance.
+  - skylar says: A number of students mill about as they return to reality after their fantastical winter break.
   - skylar says: Better head straight to art. No need to converse with strangers.
+  - show classroom_day:
+  - skylar says: This should be the right rooom.
+  - skylar says: I double check the sign. Yup, right room. And I'm early as well.
+  - skylar says: There's the teacher. Better speak to her before class.
+  - skylar says: Good morning.
+  - teacher says: Oh! Good morning! You must be the new student.
+  - skylar says: Yes I am. My name is Skylar.
+  - teacher says: Nice to meet you. I am Ms. Hayakawa. As you can tell, I teach art here. Are you experienced with it?
+  - skylar says: Sort of. Most of what I've drawn is with pencil, and I've never really gone above and beyond with it.
+  - teacher says: That's perfectly fine. I grade this class based on what you've done before. As long as you keep improving...
+  - teacher says: You should get a good grade. There's no pressure.
+  - skylar says: So have students purposely made bad things just to fake improvement?
+  - skylar says: Ms. Hayakawa smiles.
+  - teacher says: Nope. Some of them are just bad.
+  - skylar says: I chuckle a little at this.
+  - teacher says: This may be the beginning of the symester, but you may be behind in certain aspects. Veronica?
+  - show veronica: normal AT LEFT WITH FADE
+  - veronica says: Yes?
+  - teacher says: Do you think you can help Skylar get up to speed? You are already ahead of the class.
+  - show veronica: happy
+  - veronica says: Sure! I'll be happy to!
+  - show veronica: surprised
+  - veronica says: Oh! Where are my manners?
+  - show veronica: happy
+  - veronica says: Hi! I'm Veronica, but I guess you already knew that.
+  - skylar says: I laugh.
+  - skylar says: No worries. I'm Skylar.
+  - skylar says: We both head to our desks as 
   - scene: day2
 
 day2:
@@ -110,7 +146,7 @@ day10:
 selection:
   - show school_morning:
   - play morningBGM:
-  - text: You have {nica} points
+  - text: Who should I spend time with today?
   - var nicaStranger: "{nica} == 0"
   - var nicaAquaintence: "{nica} == 1"
   - var nicaFriend: "{nica} == 2"

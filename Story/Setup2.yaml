@@ -28,6 +28,11 @@ setup:
     street_afternoon: assets/backgrounds/school_front_afternoon.jpg
     store: assets/backgrounds/store.jpg
   characters:
+    teacher:
+      displayName: Teacher
+      speechColour: "#000000"
+      looks:
+        normal: assets/characters/Knuckles.png
     news:
       displayName: Newscaster
       speechColour: "#000000"
