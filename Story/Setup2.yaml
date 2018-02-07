@@ -5,12 +5,23 @@ setup:
     room_evening: assets/backgrounds/Bedroom/Room_Evening.jpg
     room_night: assets/backgrounds/Bedroom/Room_Night.jpg
     room_latenight: assets/backgrounds/Bedroom/Room_Latenight.jpg
+    house_day: assets/backgrounds/House/House_Day.jpg
+    house_evening: assets/backgrounds/House/House_Evening.jpg
+    house_night: assets/backgrounds/House/House_Night.jpg
+    house_latenight: assets/backgrounds/House/House_Latenight.jpg
+    living_day: assets/backgrounds/Living/Living_Day.jpg
+    living_evening: assets/backgrounds/Living/Living_Evening.jpg
+    living_night: assets/backgrounds/Living/Living_Night.jpg
+    living_latenight: assets/backgrounds/Living/Living_Latenight.jpg
     corridor_day: assets/backgrounds/Corridor/Corridor_Day.jpg
     corridor_evening: assets/backgrounds/Corridor/Corridor_Evening.jpg
     corridor_night: assets/backgrounds/Corridor/Corridor_Night.jpg
     classroom_day: assets/backgrounds/Classroom/Classroom_Day.jpg
     classroom_evening: assets/backgrounds/Classroom/Classroom_Evening.jpg
     classroom_night: assets/backgrounds/Classroom/Classroom_Night.jpg
+    front_day: assets/backgrounds/Front/Front_Day.jpg
+    front_evening: assets/backgrounds/Front/Front_Evening.jpg
+    front_night: assets/backgrounds/Front/Front_Night.jpg
     school_morning: assets/backgrounds/school_corridor.jpg
     school_afternoon: assets/backgrounds/school_corridor_afternoon.jpg
     street_morning: assets/backgrounds/school_front_morning.jpg
