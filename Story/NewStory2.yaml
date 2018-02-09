@@ -1,15 +1,15 @@
 start:
   - show room_day:
   - play morningBGM:
-  - text: version 1.0.11
+  - text: version 1.0.12
   - var nica: 0
   - var nova: 0
   - var jax: 0
   - var eli: 0
   - var day: 2
   - var finalScore: 0
-  - skylar says: This is it, I guess.
-  - skylar says: Last semester of senior year
+  - skylar says: ~This is it, I guess.~
+  - skylar says: Last semester of senior year.
   - skylar says: Of course my parents had us move to the islands in the middle of the year.
   - skylar says: Then again, I've never lived in one place for more than a few years...
   - skylar says: So I should've expected something like this to happen. Especially with dad's job.
@@ -18,7 +18,7 @@ start:
   - skylar says: Morning mom! Morning Dad!
   - dad says: Hey Sky! Ready for school?
   - mom says: Of course not! Not without breakfast!
-  - skylar says: Eggs and bacon. My favorite!
+  - skylar says: Eggs and bacon! What a treat!
   - mom says: It is technically your first day back at school. You need all the strength you can get.
   - dad says: Hey Sky, can you hit the TV? I need to see what the news is.
   - skylar says: Sure thing dad.
@@ -62,8 +62,9 @@ start:
   - skylar says: Ms. Hayakawa smiles.
   - teacher says: Nope. Some of them are just bad.
   - skylar says: I chuckle a little at this.
-  - teacher says: This may be the beginning of the symester, but you may be behind in certain aspects. Veronica?
+  - teacher says: This may be the beginning of the semester, but you may be behind in certain aspects. Veronica?
   - show veronica: normal AT LEFT WITH FADE
+    flipped: True
   - veronica says: Yes?
   - teacher says: Do you think you can help Skylar get up to speed? You are already ahead of the class.
   - show veronica: happy
@@ -74,7 +75,42 @@ start:
   - veronica says: Hi! I'm Veronica, but I guess you already knew that.
   - skylar says: I laugh.
   - skylar says: No worries. I'm Skylar.
-  - skylar says: We both head to our desks as 
+  - skylar says: We both head to our desks as more of the class pours in.
+  - show veronica: normal
+  - veronica says: So Skylar. Why are you transfering halfway in?
+  - skylar says: My dad's job. I move every few years because of it.
+  - veronica says: Wow. How many times have you traveled?
+  - skylar says: This would be my eigth time.
+  - show veronica: surprised
+  - veronica says: What?! Eight times?!
+  - skylar says: Yeah...is it really that surprising?
+  - show veronica: normal
+  - veronica says: To me it is. I have lived on the islands my whole life.
+  - show veronica: sorrow
+  - veronica says: I can't imagine having to abandon everything I know.
+  - veronica says: Every place, every person, even the weather.
+  - choice:
+    - You're right. It does suck:
+      - skylar says: While I try to brush it off so my parents don't get worried, it doesn't stop that feeling, you know.
+      - skylar says: The feeling that everybody around me has known the people around them forever while I am always an outsider.
+      - show veronica: worried
+      - veronica says: I'm sorry to hear that. Sounds like a rough life.
+      - skylar says: I was. I broke down a couple of times on the plane when I realized that I could never see my friends again.
+    - You get used to it:
+      - skylar says: It is rough, but after doing it so many times, it sort of becomes routine.
+      - skylar says: You get used to making friends fast and having to enjoy the limited time you have.
+      - skylar says: After a while, the culture shock lessens as well.
+      - show veronica: normal
+      - veronica says: When you put it like that, it sounds like you're one resilient person.
+      - veronica says: I would probably break down a little through all that.
+      - skylar says: Oh I did break down. Especially after making many close friends.
+      - skylar says: But I still try to keep contact
+      - skylar says: ~Even if I'm really bad at doing that~
+    - It's nothing, really:
+      - skylar says: People make a big deal out of moving, but it really isn't too bad.
+      - show veronica: surprised
+      - veronica says: Really? How so?
+      - skylar says: Once you get past the initial shock of moving, 
   - scene: day2
 
 day2:
