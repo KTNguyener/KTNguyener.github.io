@@ -1,7 +1,7 @@
 start:
   - show room_day:
   - play morningBGM:
-  - text: version 1.0.12
+  - text: version 1.0.13
   - var nica: 0
   - var nova: 0
   - var jax: 0
@@ -9,11 +9,11 @@ start:
   - var day: 2
   - var finalScore: 0
   - skylar says: ~This is it, I guess.~
-  - skylar says: Last semester of senior year.
-  - skylar says: Of course my parents had us move to the islands in the middle of the year.
-  - skylar says: Then again, I've never lived in one place for more than a few years...
-  - skylar says: So I should've expected something like this to happen. Especially with dad's job.
-  - skylar says: Well, no use moping around. I can smell breakfast already
+  - skylar says: ~Last semester of senior year.~
+  - skylar says: ~Of course my parents had us move to the islands in the middle of the year.~
+  - skylar says: ~Then again, I've never lived in one place for more than a few years...~
+  - skylar says: ~So I should've expected something like this to happen. Especially with dad's job.~
+  - skylar says: ~Well, no use moping around. I can smell breakfast already.~
   - show living_day:
   - skylar says: Morning mom! Morning Dad!
   - dad says: Hey Sky! Ready for school?
@@ -25,7 +25,7 @@ start:
   - news says: In other news, tensions continue to rise between our two nations and insults are traded over social media.
   - news says: While most of the populace has refused to take the Dictator seriously, making memes of him instead...
   - news says: The President assures us that the Dictator is a very real threat.
-  - skylar says: Dad instantly looks more on edge. Him and mom try to speak softly, but I still hear them.
+  - skylar says: ~Dad instantly looks more on edge. Him and mom try to speak softly, but I still hear them.~
   - dad says: He really just wants to make international relationships harder.
   - mom says: Don't let it get to you dear.
   - dad says: I know honey, but it is aggravating to see the words of one man destroy years of my team's work.
@@ -48,9 +48,9 @@ start:
   - skylar says: A number of students mill about as they return to reality after their fantastical winter break.
   - skylar says: Better head straight to art. No need to converse with strangers.
   - show classroom_day:
-  - skylar says: This should be the right rooom.
-  - skylar says: I double check the sign. Yup, right room. And I'm early as well.
-  - skylar says: There's the teacher. Better speak to her before class.
+  - skylar says: ~This should be the right rooom.~
+  - skylar says: ~I double check the sign. Yup, right room. And I'm early as well.~
+  - skylar says: ~There's the teacher. Better speak to her before class.~
   - skylar says: Good morning.
   - teacher says: Oh! Good morning! You must be the new student.
   - skylar says: Yes I am. My name is Skylar.
@@ -95,7 +95,11 @@ start:
       - skylar says: The feeling that everybody around me has known the people around them forever while I am always an outsider.
       - show veronica: worried
       - veronica says: I'm sorry to hear that. Sounds like a rough life.
-      - skylar says: I was. I broke down a couple of times on the plane when I realized that I could never see my friends again.
+      - skylar says: It was. I broke down a couple of times on the plane when I realized that I could never see my friends again.
+      - skylar says: But life goes on, you know? Now I'm here, ready to start the cycle all over again.
+      - show veronica: happy
+      - veronica says: Whenever you need support, I'll help you!
+      - skylar says: ~Before I can protest, class starts.~
     - You get used to it:
       - skylar says: It is rough, but after doing it so many times, it sort of becomes routine.
       - skylar says: You get used to making friends fast and having to enjoy the limited time you have.
@@ -106,12 +110,183 @@ start:
       - skylar says: Oh I did break down. Especially after making many close friends.
       - skylar says: But I still try to keep contact
       - skylar says: ~Even if I'm really bad at doing that~
-    - It's nothing, really:
+    - I have gained a lot more:
       - skylar says: People make a big deal out of moving, but it really isn't too bad.
       - show veronica: surprised
       - veronica says: Really? How so?
-      - skylar says: Once you get past the initial shock of moving, 
-  - scene: day2
+      - skylar says: Once you get past the initial shock of moving, you realize what you gain.
+      - skylar says: I've gained broader perspectives, friends across the world, and international experiences.
+      - skylar says: It has shaped my world view immensely.
+      - veronica says: Wow. Sounds exciting.
+      - skylar says: Then again, there's only so many ancient ruins you can see before they start looking the same.
+      - show veronica: laugh
+      - skylar says: ~Small laughs break out between the two of us.~
+  - show veronica: normal
+  - skylar says: ~We both take our seats as Ms. Hayakawa begins her lesson.~
+  - skylar says: ~As a quick warmup from Winter Break, she has us practice pencil sketches.~
+  - skylar says: ~What should I draw?~
+  - choice:
+    - Ancient ruins:
+      - skylar says: ~Since I talked about ancient ruins, I might as well draw them.~
+    - Butterfly:
+      - skylar says: ~Nothing wrong with doing something simple yet complex.~
+    - Cartoon/Anime:
+      - skylar says: ~I have been bingewatching some shows lately. Might as well.~
+    - Spaceship:
+      - skylar says: ~That new Galactal Conflict movie was so good. I gotta draw the X-Fighter.~
+  - skylar says: ~After a while, Veronica checks my progress.~
+  - show veronica: surprised
+  - veronica says: Wow! That's really good!
+  - skylar says: Thanks! I-
+  - skylar says: ~As soon as I see hers, my mind comes to a halt.~
+  - skylar says: ~It's a bird eye's view of the island, yet so much more.~
+  - skylar says: ~There is intricate detail, showing the elevations and cities.~
+  - skylar says: ~The trees and rivers pop out despite being on a flat sheet of paper.~
+  - skylar says: ~The ocean looks as though it can move at any second.~
+  - show veronica: worried
+  - skylar says: ~And it's only been 15 minutes.~
+  - veronica says: Uhh, Skylar?
+  - skylar says: How?
+  - veronica says: How what?
+  - skylar says: How did you create that masterpiece so fast?
+  - show veronica: embarressed
+  - veronica says: It's nothing, really. I just...really like art.
+  - veronica says: I've been doing it for so long that it just comes naturally to me.
+  - veronica says: In fact, this is worse than I usually do.
+  - show veronica: normal
+  - skylar says: ~Before I can say anything else, Ms. Hayakawa starts collecting papers and announcing the next project.~
+  - skylar says: ~I wonder what it is.~
+  - skylar says: ~...~
+  - skylar says: ~I hope it's not painting. I absolutely suck at that.~
+  - skylar says: ~......~
+  - skylar says: ~Seriously, who can use those tiny brushes and those unstable paints? They just get everywhere.~
+  - skylar says: ~.........~
+  - skylar says: ~It's painting. I'm doomed.~
+  - veronica says: Are you okay?
+  - skylar says: ~I can only let out a measley croak.~
+  - skylar says: ...no...
+  - veronica: ...Would you like some help?
+  - skylar says: You would do that for me?!
+  - show veronica: happy
+  - veronica says: Of course! Let me know when you want to meet afterschool, and I'll help you.
+  - skylar says: Oh thank you thank you thank you thank you!
+  - veronica says: It's no problem. I have my fair share of experience, so I should be able to help you.
+  - skylar says: ~The bell rings and all the students rush for the door.~
+  - show corridor_day:
+  - skylar says: ~I wave goodbye to Veronica and head off to english class.~
+  - hide veronica: WITH FADE
+  - skylar says: ~Time to head to English.~
+  - show classroom_day:
+  - show eli: happy AT LEFT WITH FADE
+    flipped: True
+  - skylar says: ~When I enter the classroom, I already see a student talking to the teacher.~
+  - eli says: Oh Mr. Avellana! I haven't seen you since last year!
+  - skylar says: ~Groans fills the room while the teacher just laughs.~
+  - choice:
+    - Laugh:
+      - skylar says: ~I let out a few chuckles at the overused joke.~
+    - Groan:
+      - skylar says: ~Oh god, not another New Year's joke.~
+  - teacher says: Oh, you must be Skylar! I'm Mr. Avellana.
+  - teacher says: This jokester right here is Elijah.
+  - eli says: Just call me Eli. It's shorter. Less syllables as well.
+  - show eli: normal
+  - eli says: You ever think it's strange that our letters and syllable lengths are inconsistent?
+  - eli says: Or how the plural for tooth is teeth, but the plural for booth is not beeth?
+  - choice:
+    - English is weird:
+      - skylar says: You're right. There are some weird rules that seem inconsistent.
+      - eli says: But here's the kicker.
+      - show eli: happy
+      - eli says: It's always been weird. We just decided to pay attention for once.
+    - That's just English:
+      - skylar says: English has all sorts of weird rules. That's what makes it English.
+      - show eli: happy
+      - eli says: Yup. That's probably why so many people got fed up with Englishmen way back when.
+  - teacher says: Okay class. Settle down. We will be starting Hamlet today.
+  - teacher says: I recommend downloading the No-Fear version, so you could actually understand some of the old English.
+  - teacher says: Especially the slang.
+  - eli says: Mr. Avellana!
+  - teacher says: Yes?
+  - eli says: Isn't modern slang hard enough to understand?
+  - teacher says: How so?
+  - show eli: normal
+  - eli says: Well, carjack means to hijack a car, but a car jack is used to lift a car, but to lift a car can mean to steal a car.
+  - teacher says: And...
+  - eli says: So you can carjack a car with a car jack, lifting it, but without lifting it.
+  - show eli: laugh
+  - skylar says: ~The whole class was silent for a solid five seconds.~
+  - skylar says: ~Very slowly, Mr. Avellana put his hands to his head...~
+  - skylar says: ~And blew his mind.~
+  - teacher says: Well, I'm pretty sure you'll love this play then. Open your books, class.
+  - skylar says: ~As everyone got their books out, Eli whispered to me.~
+  - show eli: happy
+  - eli says: Have you read Hamlet yet?
+  - skylar says: Yes, I have. My last school had us read it during Junior year.
+  - skylar says: Have you?
+  - eli says: Yeah. It's my favorite Shakespeare play!
+  - show eli: worried
+  - eli says: Then again, it's the only Shakespeare play I've read. Should probably work on that.
+  - eli says: So you know all of the tragic deaths that happen?
+  - skylar says: Yup. It was pretty painful. Especially Ophelia's.
+  - eli says: I think her death was the most tragic. Fell in a river while insane with sadness.
+  - choice:
+    - Make a one-liner pun:
+      - skylar says: Yeah. It was pretty sad.
+      - skylar says: I guess Ophelia...
+      - skylar says: Drowned in her sorrows.
+      - show eli: laugh
+      - eli says: YEAAAAAAAAAAAAAAAAH!
+      - skylar says: ~He then goes to sing the rest of the CSI theme, guitars and everything.~
+      - skylar says: ~Albeit quietly. Though, it still draws looks from surrounding classmates, who roll their eyes at his antics.~
+      - skylar says: ~I guess this is normal for them.~
+    - Agree with the tragicness:
+      - skylar says: Everything that happened to her was awful.
+      - skylar says: First, her family tells her her lover doesn't love her.
+      - skylar says: Then, she is pushed to go back to him when he starts going insane.
+      - skylar says: After that, her former lover kills her father.
+      - skylar says: Finally, she goes insane and drowns.
+      - skylar says: To top it off, they were debating giving her a proper funeral.
+      - eli says: That's just awful, right?
+    - Counter with how it showed her strength:
+      - skylar says: It is sad, but I think it showed her strength.
+      - show eli: surprised
+      - eli says: Really? How so?
+      - skylar says: Well, you know how Hamlet's indecisiveness gets everyone killed, right?
+      - eli says: Mmhm
+      - skylar says: And you know how Ophelia has had most her decisions made for her througout her life?
+      - eli says: Yup. Pretty bad life.
+      - skylar says: In that instant, she made a decision for herself: To leave the corrupt and cruel world of Denmark.
+      - skylar says: She essentially said "Screw ya'll. Ya'll are a bunch of crazy corrupt jerks. Bye!"
+      - show eli: laugh
+      - eli says: I haven't thought of that. That's a pretty cool perspective.
+  - teacher says: Ey! Quiet! No spoilers.
+  - show eli: happy
+  - eli says: Sorry sir. Just having a discussion.
+  - teacher says: Well, don't hog all of the good ideas. Save it for the rest of us.
+  - skylar says: ~After a few more moments, we start reading Hamlet.~
+  - skylar says: ~I may have read it before, but the story still intrigues me.~
+  - skylar says: ~I can see it intrigues Mr. Avellana and Eli too. Both of them discover new things as they read it for the nth time.~
+  - skylar says: ~The reading goes slowly, but we have lots of discussions along the way.~
+  - skylar says: ~Eli tries not to dominate the conversation, but whenever there is silence, he breaks it.~
+  - skylar says: ~Before I know it, the class ends.~
+  - show corridor_day:
+  - eli says: Hey. Are you interested enough in Drama?
+  - skylar says: Yeah, but I'm not the best actor.
+  - eli says: It matters not, my ally. There is an informal Drama Club that occurs after the school hours.
+  - eli says: Should you be interested, we would welcome you with open arms.
+  - eli says: We're trying to do a nonsensical version of Hamlet. It'll be hilarious.
+  - skylar says: Sure, I'd be interested. I'll stop by sometime.
+  - eli says: Sweet! I'll see you there.
+  - skylar says: ~Eli and I part ways, waving goodbye as we walk away.
+  - hide eli: WITH FADE
+  - skylar says: ~Philosophy time.~
+  - skylar says: ~The one class we can ramble and still sound smart.~
+  - skylar says: ~This is gonna be fun.~
+  - show classroom_day:
+  - show jax: normal AT RIGHT WITH FADE
+  -
+  - scene: selection
 
 day2:
   - show classroom_night:
@@ -180,7 +355,7 @@ day10:
 
 
 selection:
-  - show school_morning:
+  - show corridor_day:
   - play morningBGM:
   - text: Who should I spend time with today?
   - var nicaStranger: "{nica} == 0"
@@ -230,10 +405,11 @@ selection:
           - scene: nova2
 
 veronica1:
-  - show school_morning:
+  - show classroom_evening:
   - play morningBGM:
   - text: This is veronica 1.
   - text: It is day {day}.
+  - show veronica: normal WITH FADE
   - choice:
     - Right Choice:
       - skylar says: That went well.
