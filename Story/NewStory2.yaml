@@ -165,7 +165,7 @@ start:
   - veronica says: Are you okay?
   - skylar says: ~I can only let out a measley croak.~
   - skylar says: ...no...
-  - veronica: ...Would you like some help?
+  - veronica says: ...Would you like some help?
   - skylar says: You would do that for me?!
   - show veronica: happy
   - veronica says: Of course! Let me know when you want to meet afterschool, and I'll help you.
@@ -178,7 +178,6 @@ start:
   - skylar says: ~Time to head to English.~
   - show classroom_day:
   - show eli: happy AT LEFT WITH FADE
-    flipped: True
   - skylar says: ~When I enter the classroom, I already see a student talking to the teacher.~
   - eli says: Oh Mr. Avellana! I haven't seen you since last year!
   - skylar says: ~Groans fills the room while the teacher just laughs.~
@@ -256,8 +255,8 @@ start:
       - eli says: Mmhm
       - skylar says: And you know how Ophelia has had most her decisions made for her througout her life?
       - eli says: Yup. Pretty bad life.
-      - skylar says: In that instant, she made a decision for herself: To leave the corrupt and cruel world of Denmark.
-      - skylar says: She essentially said "Screw ya'll. Ya'll are a bunch of crazy corrupt jerks. Bye!"
+      - skylar says: In that instant, she made a decision for herself. To leave the corrupt and cruel world of Denmark.
+      - skylar says: She essentially said Screw yall. Ya'll are a bunch of crazy corrupt jerks. Bye!
       - show eli: laugh
       - eli says: I haven't thought of that. That's a pretty cool perspective.
   - teacher says: Ey! Quiet! No spoilers.
@@ -276,6 +275,8 @@ start:
   - eli says: It matters not, my ally. There is an informal Drama Club that occurs after the school hours.
   - eli says: Should you be interested, we would welcome you with open arms.
   - eli says: We're trying to do a nonsensical version of Hamlet. It'll be hilarious.
+  - skylar says: Really? What kind of roles do you like playing?
+  - eli says: I love being the character that dies. It's always fun being a drama king about it. So, you in?
   - skylar says: Sure, I'd be interested. I'll stop by sometime.
   - eli says: Sweet! I'll see you there.
   - skylar says: ~Eli and I part ways, waving goodbye as we walk away.
@@ -285,7 +286,8 @@ start:
   - skylar says: ~This is gonna be fun.~
   - show classroom_day:
   - show jax: normal AT RIGHT WITH FADE
-  -
+  - jax says: Sample text because I'm too lazy to write this character right now.
+  - hide jax: WITH FADE
   - scene: selection
 
 day2:
@@ -409,15 +411,139 @@ veronica1:
   - play morningBGM:
   - text: This is veronica 1.
   - text: It is day {day}.
+  - var veronica1Score: 0
   - show veronica: normal WITH FADE
+  - veronica says: Hey! You're here!
+  - skylar says: I'm not late, am I? You got all the supplies out already.
+  - veronica says: Don't worry. I got here early to set up everything we need first. You ready?
+  - skylar says: Yup. Good to go.
+  - show veronica: happy
+  - veronica says: Great! First, we need to prepare the painting area.
+  - skylar says: ~She starts walking towards some newspapers.~
   - choice:
-    - Right Choice:
-      - skylar says: That went well.
-      - var nica: "{nica} + 1"
-      - var finalScore: "{finalScore} + 1"
-    - Wrong Choice:
-      - skylar says: That could've gone better.
-      - var nica: 2
+    - Help her out:
+      - skylar says: Let me carry some.
+      - show veronica: surprised
+      - veronica says: You don't have to do it.
+      - skylar says: Please, I insist.
+      - show veronica: happy
+      - veronica says: Okay. Spread them out over there.
+      - var veronica1Score: "{veronica1Score} + 1"
+    - Let her do it:
+      - skylar says: ~I watch her grab some newspapers and set them on the table.~
+  - skylar says: ~Once all the papers are set up, we grab some paints.~
+  - veronica says: For today, we will start small.
+  - skylar says: Any particular reason why?
+  - veronica says: It'll be easier for you.
+  - choice:
+    - What are you trying to say?:
+      - skylar says: What are you trying to say? I suck that bad?
+      - show veronica: angry
+      - veronica says: Hey, you're the one who asked for my help.
+      - skylar says: I hate being underestimated. It's a pet peeve of mine.
+      - show veronica: sorrow
+      - veronica says: Sorry, I didn't know.
+    - I see. Thank you.:
+      - skylar says: That makes sense. A smaller picture can allow me to focus easier.
+      - veronica says: That's right. Most people feel that they have to go big or go home.
+      - veronica says: Art, like many other things, requires patience. You won't start out good, but you can improve with enough time and effort.
+      - skylar says: Is that how you got so good?
+      - show veronica: laugh
+      - veronica says: That's right! You should've seen my earlier work.
+      - skylar says: Hey. Thank you for doing this.
+      - show veronica: happy
+      - veronica says: No problem!
+      - skylar says: No. I really mean it. You didn't have to take the time to help me, but here you are.
+      - skylar says: Not only that, but you are being considerate to my inexperience as well. It means a lot.
+      - show veronica: embarressed
+      - veronica says: It's...no problem. Thank you for understanding.
+      - skylar says: Hey, it's the least I can do.
+      - var veronica1Score: "{veronica1Score} + 1"
+  - show veronica: normal
+  - skylar says: ~After choosing a simple color palette, we start.~
+  - skylar says: ~Veronica wants to see my current ability, so I work on my own painting while she finishes up some school work.~
+  - choice:
+    - Strike up a small conversation:
+      - skylar says: ~I try to talk to Veronica as I work.~
+      - skylar says: ~We only exchange a few words since we're both trying to complete our tasks.~
+    - Stay on task:
+      - skylar says: ~I focus in on my painting, keeping the tips Veronica gave me in mind.~
+      - skylar says: ~I don't know if I imagined it or not, but I think I saw Veronica nod in approval.~
+      - var veronica1Score: "{veronica1Score} + 1"
+  - show veronica: worried
+  - skylar says: ~After a little bit, some progress is being made.~
+  - skylar says: ~However, I see Veronica struggling a little bit with her work.~
+  - choice:
+    - Help her with her work:
+      - show veronica: surprised
+      - skylar says: ~I take a quick break and look over Veronica's work.~
+      - skylar says: ~She initially objects, but once I start explaning how to solve it, she focuses.~
+      - var veronica1Score: "{veronica1Score} + 1"
+    - Focus on your own:
+      - skylar says: ~Veronica told me to focus on my work and not worry about her.~
+  - show veronica: normal
+  - skylar says: ~Some more time passes, but soon enough, I finish my painting.~
+  - skylar says: ~I am ready to present my painting of...~
+  - choice:
+    - ANCIENT RUINS:
+      - skylar says: ~Veronica takes a minute to look over what I've done.~
+      - show veronica: laugh
+      - veronica says: I thought you hated ancient ruins.
+      - skylar says: I do get tired of them, but I can't deny that there is some beauty to it.
+      - skylar says: Most of these ruins were carved from a single rock or mountain, leaving no room for error.
+      - skylar says: The technical achievement cannot be ignored.
+      - show veronica: happy
+      - veronica says: Either way, this is really good for your first time.
+      - veronica says: It's not too detailed, but the main image comes through effectively. I can see the color changes you tried incorporate.
+      - skylar says: Tried?
+      - show veronica: surprised
+      - veronica says: I didn't mean it like that!
+      - skylar says: Don't worry. I understand. I know this is my first time, and I didn't expect it to go good.
+      - veronica says: But that's the thing. It did go good!
+      - show veronica: happy
+      - veronica says: You have the base skills and the potential to improve. That is more than enough.
+      - skylar says: Wow. Thanks.
+      - var veronica1Score: "{veronica1Score} + 1"
+    - An abstract crude joke:
+      - show veronica: angry
+      - skylar says: ~I thought it would be hilarious, but Veronica isn't laughing.~
+      - skylar says: ~Instead, she just looks in disgust.~
+      - veronica says: Really?
+      - skylar says: I thought it would be funny as a first project.
+      - skylar says: Besides, it is meant to be abstract.
+      - show veronica: normal
+      - veronica says: I mean, you're not wrong.
+      - veronica says: It does have some qualities of a good piece, like color choice, details, balance...
+      - show veronica: angry
+      - veronica says: But really? That's disgusting.
+    - The island:
+      - show veronica: surprised
+      - skylar says: ~Veronica's eyes perk up in recognition.~
+      - veronica says: This looks familiar.
+      - skylar says: I might've...sort've...based it on your pencil drawing of the island when we first met.
+      - veronica says: Oh! I do see it!
+      - show veronica: embarressed
+      - veronica says: I didn't expect to be your inspiration.
+      - skylar says: Are you kidding me? Your art is amazing! I could only dream of becoming as good as you are.
+      - skylar says: I tried to capture some of the movement and life your drawing had, but I think I fell short. Very short.
+      - show veronica: normal
+      - veronica says: No you didn't.
+      - veronica says: While the palette may be simplified, the big picture comes through.
+      - veronica says: Water is usually very difficult to do, but you managed to add some texture and depth to it.
+      - show veronica: happy
+      - veronica says: You have the base skills and the potential to improve. That is more than enough.
+      - skylar says: Wow. Thanks.
+      - var veronica1Score: "{veronica1Score} + 1"
+  - show veronica: normal
+  - skylar says: ~We discuss painting a little bit more before our time runs out.~
+  - skylar says: ~We then say our goodbyes as we head home.~
+  - if ({veronica1Score} == 5):
+    - var finalScore: "{finalScore} + 1"
+    - var nica: "{nica} + 1"
+    - skylar says: ~That went rather well. I am looking forward to our next session.~
+  - else:
+    - var nica: 2
+    - skylar says: ~That could've gone better. I doubt she would want to do another session with me.~
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
@@ -534,17 +660,150 @@ jax2:
     - scene: day10
 
 eli1:
-  - show school_morning:
+  - show classroom_evening:
   - play morningBGM:
   - text: This is eli 1.
   - text: It is day {day}.
+  - var eli1Score: 0
+  - skylar says: ~I walk into the classroom to see the desks arranged in a circle.~
+  - show eli: happy WITH FADE
+  - eli says: Hey! You made it.
+  - skylar says: Wouldn't miss it! Sorry I'm a little late.
+  - eli says: It's no problem.
+  - skylar says: So what are we doing?
+  - eli says: Each group is randomly assigned a scene and then has to act it out in a completely nonsensical manner.
+  - eli says: I said that you would be with me, and we got one of the best scenes...
+  - eli says: Hamlet's death.
+  - skylar says: The scene where his friend Horatio tries to kill himself along with him and Hamlet is like "NO!"?
+  - show eli: laugh
+  - eli says: Yup. That's the one. How should we do the roles?
   - choice:
-    - Right Choice:
-      - skylar says: That went well.
+    - You be Hamlet and die, I'll be Horatio:
+      - var eli1Score: "{eli1Score} + 1"
+      - skylar says: You said you like to be the character who dies. It's only fair that you get to be Hamlet.
+      - eli says: Sweet! Thanks for remembering! This is gonna be great.
+      - show eli: happy
+      - skylar says: ~We spend some time discussing how we'll do the scene.~
+      - eli says: As I am dying, I will tell you to stay alive and tell everyone what you've seen.
+      - eli says: You have to initially refuse me and try to die along with me.
+      - skylar says: Then you'll give a dramatic speech about why I need to stay alive.
+      - eli says: Yup. Then some noises will be heard and I'll say a few more lines before dying.
+      - skylar says: What are the key words I have to say again?
+      - eli says: I don't care how you do it, but it has to be a variation of "Good Night, Sweet Prince."
+      - skylar says: What about the scene afterwards?
+      - skylar says: ~Eli quickly talks over to the group next to us.~
+      - show eli: laugh
+      - eli says: Oh this is gonna be great. You have to explain how everyone died in a comical manner...
+      - eli says: Then when Fortinbras' group tries to confirm the story, they all accidently kill themselves.
+      - eli says: Just remember that the queen died first, then they'll take care of the rest.
+      - skylar says: Got it.
+      - skylar says: ~One by one, all the groups perform their skit.~
+      - skylar says: ~Some are hilarious while others...not so much.~
+      - skylar says: ~Before I know it, our turn comes up.~
+      - show eli: normal
+      - skylar says: ~Eli lies down on the ground, pretending to convulse a little in pain.~
+      - eli says: Horatio...
+      - eli says: I'm dying...
+      - skylar says: Yeah...I can see that.
+      - eli says: This whole family situation was a wild rollercoaster of a story.
+      - eli says: A story so ridiculous it would make a great play.
+      - skylar says: ~The others laugh at the meta joke.~
+      - eli says: But I can't write it. You must tell the story, Horatio.
+      - choice:
+        - I will live on:
+          - skylar says: Very well, my prince. I will live on and tell the story.
+          - skylar says: ~Eli gives me a funny look.~
+          - skylar says: ~CRAP! That wasn't my line!~
+          - skylar says: I mean...
+        - I will die with you:
+          - var eli1Score: "{eli1Score} + 1"
+      - skylar says: Never. You...
+      - skylar says: ~I grip my fist in front of my face in a dramatic pose.~
+      - skylar says: ...are my friend! And I shall die with you.
+      - skylar says: ~I pretend to pick up a poisoned wine goblet.~
+      - skylar says: I hope this poison tastes good.
+      - show eli: surprised
+      - eli says: Force push. activate!
+      - skylar says: ~I dramatically throw my body to the side.~
+      - eli says: No Horatio!
+      - eli says: I just told you to stay alive! What the frick man!?
+      - skylar says: ~He clutches his stomach in pain.~
+      - eli says: If you die here, then who will tell the story? Who will repair our reputation?
+      - eli says: Who will write this story into a play that will sell millions of copies and be performed throughout the world...
+      - eli says: ...a play that will also be performed in the year 20XX by a bunch of idiot high schoolers? Who will do it?
+      - eli says: Wait, what the heck is that racket?
+      - skylar says: It is Frotinbras, who returns from conquering Poland.
+      - skylar says: ~Eli coughs and screams in pain.~
+      - eli says: I'M DYING HORATIO! Tell Fortinbras that he has permission to take over this rotten kingdom and this palance filled with blood.
+      - skylar says: ~Eli huffs a little before turning on his back.~
+      - eli says: That poison had some sugar in it.
+      - show eli: normal
+      - skylar says: ~Just as I think he is going to die silently, he convulses a little before comically dying with his tongue hanging out.~
+      - hide eli: WITH FADE
+      - choice:
+        - Good Night, *pulls out sunglasses* Sweet Prince:
+          - var eli1Score: "{eli1Score} + 1"
+          - skylar says: Good Night...
+          - skylar says: ~I pull sunglasses out of nowhere and put them on.~
+          - skylar says: Sweet Prince.
+          - skylar says: ~The other group blares the CSI theme from their speakers as I strike a dramatic pose.~
+        - Goodbye, Sweet Prince:
+          - skylar says: Goodbye, Sweet Prince.
+          - skylar says: ~I tense up as I realize I said the wrong line, but it's too late now.
+        - Good Night, Sugary King:
+          - skylar says: Good Night, Sugary King.
+          - skylar says: ~I tense up as I realize I said the wrong line, but it's too late now.
+        - Good Night, Sweet Prince:
+          - var eli1Score: "{eli1Score} + 1"
+          - skylar says: Good Night, Sweet Prince, and may angels sing you to sleep.
+          - skylar says: ~The other group makes drum effects to show Fortinbras entering.~
+          - skylar says: DO YOU MIND?! I'm trying to grieve here!
+      - student1 says: I am Lord Fortinbras and- WHAT THE HECK HAPPENED HERE?!
+      - skylar says: ~He gestures to all the bodies.~
+      - skylar says: Hi! Welcome to Denmark, where someone can't make a decision and everybody dies.
+      - student2 says: How did this all happen? Who died first?
+      - choice:
+        - The Queen:
+          - var eli1Score: "{eli1Score} + 1"
+        - The King:
+          - skylar says: King died first!
+          - skylar says: ~Crap! No he didn't!~
+          - skylar says: I mean...
+        - The Prince:
+          - skylar says: King died first!
+          - skylar says: ~Crap! No he didn't!~
+          - skylar says: I mean...
+      - skylar says: The queen died first, sir. From that poisoned goblet.
+      - skylar says: ~One of the students playing a subordinate picks up the nonexistant goblet.~
+      - student2 says: How did she die?
+      - skylar says: She drank from that poisoned goblet.
+      - student2 says: What, like this?
+      - skylar says: ~I look at him with a shocked expression as he drinks and dies.~
+      - student3 says: WOAH! He just died!
+      - student4 says: How did he die?
+      - student3 says: Well, he took this goblet and drank from it, like this.
+      - skylar says: ~He drinks from it before dying as well.~
+      - student1 says: What the heck is going on?!
+      - student4 says: Lord Fortinbras! Our men are dying!
+      - student1 says: I can see that. Why!?
+      - student4 says: It's because of that poisoned goblet, my lord. They pick it up, like this, then they drink it, like this.
+      - skylar says: ~He drinks from the goblet before dying as well.~
+      - skylar says: ~In less than a few minutes, we are surrounded by more bodies.~
+      - skylar says: ~The student playing Fortinbras sighs.~
+      - student1 says: I need a drink.
+      - skylar says: ~With that, the play is over.~
+      - show eli: happy WITH FADE
+      - skylar says: ~Everybody gets up and bows while cheering and applause fill the class.~
+      - skylar says: ~I see Eli smiling as he high-fives me.~
+      - skylar says: ~This was a lot of fun, and I can't wait to do this again.~
       - var eli: "{eli} + 1"
       - var finalScore: "{finalScore} + 1"
-    - Wrong Choice:
-      - skylar says: That could've gone better.
+    - I'll die as Hamlet, you be Horatio:
+      - show eli: sorrow
+      - skylar says: ~Eli visibly deflates at this, but quickly tries to recover.~
+      - skylar says: ~We try to discuss what we will do, and we eventually do it, but it lacks something.~
+      - skylar says: ~The end result is okay, but it could've been more. Eli is upset at the result.~
+      - skylar says: ~I can't help but feel it is my fault.~
       - var eli: 2
   - if ({day} == 2):
     - scene: day2

@@ -33,6 +33,26 @@ setup:
       speechColour: "#000000"
       looks:
         normal: assets/characters/Knuckles.png
+    student1:
+      displayName: Student 1
+      speechColour: "#000000"
+      looks:
+        normal: assets/characters/Knuckles.png
+    student2:
+      displayName: Student 2
+      speechColour: "#000000"
+      looks:
+        normal: assets/characters/Knuckles.png
+    student3:
+      displayName: Student 3
+      speechColour: "#000000"
+      looks:
+        normal: assets/characters/Knuckles.png
+    student4:
+      displayName: Student 4
+      speechColour: "#000000"
+      looks:
+        normal: assets/characters/Knuckles.png
     news:
       displayName: Newscaster
       speechColour: "#000000"
