@@ -12,20 +12,20 @@ start:
   - skylar says: ~Last semester of senior year.~
   - skylar says: ~Of course my parents had us move to the islands in the middle of the year.~
   - skylar says: ~Then again, I've never lived in one place for more than a few years...~
-  - skylar says: ~So I should've expected something like this to happen. Especially with dad's job.~
+  - skylar says: ~So I should've expected something like this to happen. Especially with Dad's job.~
   - skylar says: ~Well, no use moping around. I can smell breakfast already.~
   - show living_day:
-  - skylar says: Morning mom! Morning Dad!
+  - skylar says: Morning Mom! Morning Dad!
   - dad says: Hey Sky! Ready for school?
   - mom says: Of course not! Not without breakfast!
   - skylar says: Eggs and bacon! What a treat!
   - mom says: It is technically your first day back at school. You need all the strength you can get.
   - dad says: Hey Sky, can you hit the TV? I need to see what the news is.
   - skylar says: Sure thing dad.
-  - news says: In other news, tensions continue to rise between our two nations and insults are traded over social media.
+  - news says: In other news, tensions continue to rise between our two nations, and insults are traded over social media.
   - news says: While most of the populace has refused to take the Dictator seriously, making memes of him instead...
   - news says: The President assures us that the Dictator is a very real threat.
-  - skylar says: ~Dad instantly looks more on edge. Him and mom try to speak softly, but I still hear them.~
+  - skylar says: ~Dad instantly looks more on edge. Him and Mom try to speak softly, but I still hear them.~
   - dad says: He really just wants to make international relationships harder.
   - mom says: Don't let it get to you dear.
   - dad says: I know honey, but it is aggravating to see the words of one man destroy years of my team's work.
@@ -38,7 +38,7 @@ start:
   - mom says: Have a good day you two!
   - show front_day:
   - dad says: Hey Skylar. Are you gonna be okay?
-  - skylar says: Don't worry about me dad. I've done this eight times already.
+  - skylar says: Don't worry about me Dad. I've done this eight times already.
   - dad says: I know it's hard moving and making new friends, and it's hard getting used to new places every time, and it-
   - skylar says: Dad! Like I said, don't worry about me. It'll be just like any other move.
   - dad says: Alright, alright, alright. You know where to go?
@@ -48,7 +48,7 @@ start:
   - skylar says: A number of students mill about as they return to reality after their fantastical winter break.
   - skylar says: Better head straight to art. No need to converse with strangers.
   - show classroom_day:
-  - skylar says: ~This should be the right rooom.~
+  - skylar says: ~This should be the right room.~
   - skylar says: ~I double check the sign. Yup, right room. And I'm early as well.~
   - skylar says: ~There's the teacher. Better speak to her before class.~
   - skylar says: Good morning.
@@ -723,6 +723,7 @@ veronica2:
   - choice:
     - See what's wrong:
       - var veronica2Score: "{veronica2Score} + 1"
+      - skylar says: ~I better watch what I say, or I'll make things worse.~
       - skylar says: Veronica?
       - show veronica: surprised
       - veronica says: Skylar?! What are you doing here? I told you we cancelled!
@@ -749,8 +750,42 @@ veronica2:
           - skylar says: ~Wordlessly, I help clean up the classroom, picking up various items.~
           - skylar says: ~I thought she would stay silent, but after a few minutes, she speaks up.~
       - veronica says: Do you...ever feel that you'll never be good enough? Like, no matter how much you try and succeed, you'll always fall short?
-      - skylar says: I...can't say I have for sure.
       - choice:
+        - Maybe, but to a lesser degree:
+          - var veronica2Score: "{veronica2Score} + 1"
+          - skylar says: I think at some point, we all have, but probably to a lesser degree that you feel.
+          - skylar says: I have had those thoughts before, so I have a small understanding of what you're going through.
+          - skylar says: Still, if you're willing to share, please do it. I'm here to hear.
+          - show veroncia: happy
+          - veronica says: Thank you.
+        - I haven't because that's a harmful way to think:
+          - skylar says: No. I haven't ever felt that way.
+          - skylar says: Honestly, I think it's harmful. It only hurts and misleads you.
+          - veronica says: Hmm...okay.
+        - No, but I'm willing to hear you:
+          - var veronica2Score: "{veronica2Score} + 1"
+          - skylar says: I'm not gonna lie. I don't know what that's like.
+          - skylar says: But that's not gonna stop me from hearing you out.
+          - skylar says: If you're willing to share, I'm willing to listen. We're friends, after all.
+          - show veronica: happy
+          - veronica says: Thank you.
+      - show veronica: sorrow
+      - veronica says: I don't know when it started. Just...one day, I saw a 90 on a test and thought it wasn't good enough.
+      - veronica says: If I wasn't getting 100s, I was getting upset and depressed.
+      - veronica says: Soon, it moved over to art. No matter what I did, I couldn't feel good about it.
+      - skylar says: But how? You are absolutely amazing at it!
+      - veronica says: That's the issue. I'm worried that I can no longer improve...
+      - skylar says: What?
+      - veronica says: Everyone always compliments me on what I do, but it's all relative.
+      - veronica says: It may look good to them, but to me, I can look like trash.
+      - veronica says: I've drawn better. I've painted with more detail before. This is nowhere near my norm.
+      - show veronica: sad
+      - veronica says: These are the kind of thoughts that fill my mind. Do you understand how crippling that is? How persistant those thoughts are???
+      - choice:
+        - Then why think them?:
+        - And you can't get rid of them, either:
+          - var veronica2Score: "{veronica2Score} + 1"
+          - skylar says: The worst part is that they are hard to get rid of as well.
     - Stay out of it:
       - var nica: 2
       - skylar says: ~I shouldn't be here. This is private and her business.~
