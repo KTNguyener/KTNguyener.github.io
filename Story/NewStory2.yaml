@@ -701,11 +701,62 @@ veronica1:
     - scene: day10
 
 veronica2:
-  - show school_morning:
+  - show corridor_evening:
   - play morningBGM:
   - text: This is veronica 2.
   - text: It is day {day}.
   - var veronica2Score: 0
+  - skylar says: ~What a long day.~
+  - skylar says: ~Despite Veronica cancelling our session, I still had to stay after for some make-up work.~
+  - skylar says: ~I'm ready to just go home and- wait. What's that sound?~
+  - skylar says: ~It losely sounds like...crying.~
+  - skylar says: ~I follow the source of the sound to the art room and peek inside.~
+  - show classroom_evening:
+  - show veronica: sad WITH FADE
+  - skylar says: ~Veronica is inside, furiously sketching something.~
+  - veronica says: ...no
+  - veroncia says: ...No no no...
+  - veronica says: ...no No NO!
+  - skylar says: ~Suddenly, she throws her pencil across the room, kicks down her drawing stand, and tears her drawing into shreds.~
+  - skylar says: ~A string of profanities spill from her mouth as she continues to destroy her creation.~
+  - skylar says: ~What should I do? This seems private, but if I leave, I may never be able to understand what's affecting her.~
+  - choice:
+    - See what's wrong:
+      - var veronica2Score: "{veronica2Score} + 1"
+      - skylar says: Veronica?
+      - show veronica: surprised
+      - veronica says: Skylar?! What are you doing here? I told you we cancelled!
+      - skylar says: I'm...passing through?
+      - show veronica: sorrow
+      - skylar says: ~She calms down slightly as I offer a sheepish smile.~
+      - skylar says: I had to stay afterschool and was walking through the halls, then I heard something from this room.
+      - veronica says: Oh...so you heard my outburst.
+      - skylar says: Yeah. I heard it. And...
+      - skylar says: ~I gesture to the scattered items in the room.~
+      - skylar says: I see the results of it as well.
+      - veronica says: ...
+      - skylar says: Do you want to talk about it?
+      - veronica says: No...I don't.
+      - choice:
+        - Press her:
+          - skylar says: Please? I want to help you, but you have to tell me.
+          - skylar says: ~Veronica doesn't look too happy, but she eventually relents.~
+          - veronica says: ...Alright. Fine.
+        - Wait until she is ready:
+          - var veronica2Score: "{veronica2Score} + 1"
+          - skylar says: Alright, but I'm staying with you until you go home, okay?
+          - veronica says: ...okay.
+          - skylar says: ~Wordlessly, I help clean up the classroom, picking up various items.~
+          - skylar says: ~I thought she would stay silent, but after a few minutes, she speaks up.~
+      - veronica says: Do you...ever feel that you'll never be good enough? Like, no matter how much you try and succeed, you'll always fall short?
+      - skylar says: I...can't say I have for sure.
+      - choice:
+    - Stay out of it:
+      - var nica: 2
+      - skylar says: ~I shouldn't be here. This is private and her business.~
+      - hide veronica: WITH FADE
+      - show corridor_evening:
+      - skylar says: ~I may have lost any chance of helping her, but that's my choice.
   - choice:
     - Right Choice:
       - skylar says: That went well.
@@ -1037,7 +1088,7 @@ nova1:
   - nova says: So, Skylar.
   - skylar says: ~I quickly whip me head back to the front and panic.~
   - skylar says: I was paying attention!
-  - nova says: If so, then what do you are integrals used for?
+  - nova says: If so, then what are integrals used for?
   - choice:
     - Area under the curve:
       - var nova1Score: "{nova1Score} + 1"
