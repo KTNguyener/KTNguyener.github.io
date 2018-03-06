@@ -288,18 +288,157 @@ start:
   - show jax: normal AT RIGHT WITH FADE
   - jax says: Sample text because I'm too lazy to write this character right now.
   - hide jax: WITH FADE
-  - scene: selection
+  - show corridor_day:
+  - skylar says: ~Final class of the day. Math.~
+  - skylar says: ~A core class I'm actually pretty decent in.~
+  - show classroom_day:
+  - show nova: normal WITH FADE
+  - skylar says: ~Despite my attempt to be early, someone is already here.~
+  - teacher says: You must be the new student.
+  - skylar says: Yes sir. My name is Skylar.
+  - teacher says: I am Mr. Weatherford. This is Nova, our top student.
+  - nova says: I understand that you at least have some experience in Calculus?
+  - skylar says: Uh, yeah. I was in AP Calc in my last school.
+  - nova says: Good. One less idiot to deal with.
+  - teacher says: Now Nova, be nice. I still want you to help Skylar in case some there are some gaps in knowledge.
+  - nova says: ...Fine, but just so you know, I have zero tolerance for laziness, stupidity, and distractedness.
+  - choice:
+    - Yes Ma'am!:
+      - skylar says: Yes Ma'am! I will work diligently to exceed your expectations.
+    - Make a math pun:
+      - skylar says: Don't worry. I know enough about math.
+      - show nova: happy
+      - nova says: Oh? And what exactly do you know?
+      - skylar says: There is a fine line between a numerator and a denominator.
+      - skylar says: ~Several of the other students who walked in start to either laugh or groan.~
+      - skylar says: Only a fraction of people will find this funny.
+      - show nova: laugh
+      - nova says: Oh god, no.
+      - show nova: surprised
+      - skylar says: ~Nova quickly realized she was laughing and went quiet.
+      - show nova: normal
+    - Make a dumb joke:
+      - skylar says: ~No, that's a bad idea. She just said she hates stupidity.~
+      - skylar says: ~Why would I even think that? That was a stupid idea.~
+      - skylar says: ~It was like I wasn't even in control of my actions. That was weird.~
+      - skylar says: ~Wait, how long have I been internally monologuing?~
+  - nova says: Ahem. Let's just sit down for now.
+  - skylar says: ~We all take our seats as class begins.~
+  - skylar says: ~Mr. Weatherford, a soft spoken man, goes through today's lesson, having us take notes as he works through the sample problems.~
+  - skylar says: ~I look over to see Nova diligently taking notes, her pencil rarely stopping.~
+  - skylar says: ~It isn't until a few minutes later that I realize she's not on this lesson.~
+  - skylar says: ~Looking at the syllabus, I see that she is two lessons ahead.~
+  - skylar says: ~Yup, two lesso- WAIT WHAT?!~
+  - skylar says: ~I wait until we get into free-work time before asking Nova about it.~
+  - skylar says: Are you working two lessons ahead?
+  - nova says: Yes. Yes I am.
+  - show nova: angry
+  - nova says: Do you have a problem with that?
+  - choice:
+    - I think that's awesome!:
+      - skylar says: No. Quite the opposite in fact.
+      - show nova: normal
+      - skylar says: I think it's amazing. You're so smart and talented that you've already worked ahead.'
+      - nova says: There's nothing special about it. Why spend time idling about when you could get more work done?
+      - nova says: I have to work ahead. Especially with-
+    - Why overwork yourself?:
+      - skylar says: It's not a problem, per se, but aren't you overworking yourself when you do that?
+      - nova says: I am fairly certain I know my own limits.
+      - skylar says: Everyone says that, but-
+      - nova says: But nothing. I have to work ahead. Espcially with-
+    - Nope. Just wondering.:
+      - skylar says: Nope. Just wondering, since I saw you working ahead.
+      - show nova: normal
+      - nova says: Oh. Okay.
+  - student1 says: Hey Nova. Can you help me out with this problem?
+  - nova says: Of course. To solve this, you need to-
+  - student2 says: Nova! After you help her, can you help me too?
+  - student3 says: Can I join the wait?
+  - skylar says: ~Before I know it, a mini line forms around us. Everyone is asking Nova for help.~
+  - skylar says: ~She's gonna get overwhelmed at this point.~
+  - skylar says: Hey. I can help as well.
+  - student4 says: Really? Thanks. Everyone else is asking for Nova, so I didn't see you there.
+  - show nova: worried
+  - skylar says: ~Nova gives me a strange look, but I ignore it and start helping other kids out.~
+  - skylar says: ~A few times, I don't know the problem and I have to divert them to Nova, but I hold my own.~
+  - show nova: happy
+  - nova says: Consider me impressed, Skylar. I was worried that you would be behind, but I guess that's not the case.
+  - choice:
+    - I still have much to learn.:
+      - skylar says: I still had to divert a good number of students your way. There was some stuff I did not know how to do.
+      - nova says: All of that comes with practice and time. Nobody knows everything instantly.
+      - show nova: normal
+      - nova says: A lot of times, it takes a monumental amount of work and effort that nobody knows about.
+      - show nova: happy
+      - nova says: Regardless, you helped me. I appreciate that.
+    - I'm awesome, right?:
+      - skylar says: Thanks. I did learn a lot in my old schools, so I know a thing or two about Calc. Awesome, right?
+      - show nova: normal
+      - nova says: Ahem...
+    - Make a math pun:
+      - skylar says: I don't know. There was still much I didn't know. I think it was a...
+      - skylar says: ~I point to one of the problems that has a curve on a graph.~
+      - skylar says: Sine of what's to come.
+      - show nova: laugh
+      - skylar says: ~She quietly lets out a chuckle, trying to hide it.
+  - show nova: normal
+  - nova says: I was wondering if you would be interested in joining the math team.
+  - skylar says: Math team?
+  - nova says: We practice at least once a week afterschool and go to monthly competitions, where different topics are tested.
+  - nova says: Usually, we take aptitude tests to see which topic you'll do. Are you interested?
+  - skylar says: That sounds interesting. I'll look into it.
+  - show nova: happy
+  - nova says: Thank you.
+  - show front_evening:
+  - skylar says: ~Nova and I chat a little more as we walk out of the school.~
+  - skylar says: ~A little distance away, I spot my dad pulling up.~
+  - skylar says: ~I wave goodbye to Nova as I walk towards him.~
+  - hide nova: WITH FADE
+  - dad says: So, how was the first day of school?
+  - choice:
+    - Pretty Good:
+      - skylar says: Pretty good actually. I met some new people and had some fun.
+      - dad says: That's great! I should've trusted you more when you said you got this.
+      - dad says: So, who was that girl you were talking to?
+      - skylar says: DAD!
+    - Meh:
+      - skylar says: Meh.
+      - skylar says: ~Dad simply nods and drives away.~
+    - Terrible:
+      - skylar says: I...don't wanna talk about it.
+      - dad says: That bad, huh?
+      - skylar says: The less said, the better.
+  - skylar says: ~We continue the drive home in comforting silence.~
+  - skylar says: ~I can see dad is still on edge from work, but he's doing a good job hiding it.~
+  - skylar says: ~All I know for sure is that this is my life now until graduation.~
+  - skylar says: ~The days will become monotomous with a few events breaking up the daily grind.~
+  - skylar says: ~After all, that's how life has always been for me.~
+  - scene: day2
 
 day2:
-  - show classroom_night:
+  - show living_day:
   - var day: 3
-  - skylar says: This would be day two.
+  - news says: Not much seems to change as more insults are thrown back and forth between the Dictator and the President.
+  - news says: Many citizens feel helpless as they say quote "The world is falling apart and we can't do anything about it."
+  - news says: However, some people are saying that just because our leaders are hostile, it doesn't mean we have to be as well.
+  - news says: If we can treat each other with care and respect, we can make a small difference.
   - scene: selection
 
 day3:
-  - show school_morning:
+  - show living_day:
   - var day: 4
   - skylar says: This would be day three.
+  - if ({finalScore} == 1):
+    - news says: A small sliver of hope emerges today as a protest about to turn violent was resolved.
+    - news says: According to eyewitness reports, the conflict was resolved by a simple exchange between a protester and a policeman.
+    - news says: Apparently, the two were highschool friends, and when they recognized each other, they worked together to stop any violence.
+    - news says: More recognitions took place, and soon, people were trying to learn new things about each other and the conflict was resolved.
+    - news says: Although bizarre, shis showed how people could come to a peaceful resolution by simply knowing one another.
+  - else:
+    - news says: Tensions rise today as a peaceful protest turned violent, leaving many dead and countless wounded.
+    - news says: All it took was one shove from a riot policeman, then more and more joined in.
+    - news says: In an instant, hundreds were fighting on both sides relentlessly.
+    - news says: As this goes on, many more question the promises of the President for unifying the country, as his claims only seem to do the opposite.
   - scene: selection
 
 day4:
@@ -409,8 +548,6 @@ selection:
 veronica1:
   - show classroom_evening:
   - play morningBGM:
-  - text: This is veronica 1.
-  - text: It is day {day}.
   - var veronica1Score: 0
   - show veronica: normal WITH FADE
   - veronica says: Hey! You're here!
@@ -568,6 +705,7 @@ veronica2:
   - play morningBGM:
   - text: This is veronica 2.
   - text: It is day {day}.
+  - var veronica2Score: 0
   - choice:
     - Right Choice:
       - skylar says: That went well.
@@ -662,8 +800,6 @@ jax2:
 eli1:
   - show classroom_evening:
   - play morningBGM:
-  - text: This is eli 1.
-  - text: It is day {day}.
   - var eli1Score: 0
   - skylar says: ~I walk into the classroom to see the desks arranged in a circle.~
   - show eli: happy WITH FADE
@@ -794,10 +930,15 @@ eli1:
       - skylar says: ~With that, the play is over.~
       - show eli: happy WITH FADE
       - skylar says: ~Everybody gets up and bows while cheering and applause fill the class.~
-      - skylar says: ~I see Eli smiling as he high-fives me.~
-      - skylar says: ~This was a lot of fun, and I can't wait to do this again.~
-      - var eli: "{eli} + 1"
-      - var finalScore: "{finalScore} + 1"
+      - if ({eli1Score} == 4):
+        - skylar says: ~I see Eli smiling as he high-fives me.~
+        - skylar says: ~This was a lot of fun, and I can't wait to do this again.~
+        - var eli: "{eli} + 1"
+        - var finalScore: "{finalScore} + 1"
+      - else:
+        - skylar says: ~Although this was a lot of fun, I messed up a lot. Eli is hiding something behind that smile.~
+        - skylar says: ~I guess I screwed up too much.~
+        - var eli: 2
     - I'll die as Hamlet, you be Horatio:
       - show eli: sorrow
       - skylar says: ~Eli visibly deflates at this, but quickly tries to recover.~
@@ -857,18 +998,139 @@ eli2:
     - scene: day10
 
 nova1:
-  - show school_morning:
+  - show classroom_evening:
   - play morningBGM:
-  - text: This is nova 1.
-  - text: It is day {day}.
+  - var nova1Score: 0
+  - show nova: happy WITH FADE
+  - nova says: Skylar. You made it.
+  - skylar says: Hope I'm not late.
+  - nova says: Nope. You're just in time. We're going over a variety of events today.
+  - nova says: Grab a white board, a marker, and a seat.
   - choice:
-    - Right Choice:
-      - skylar says: That went well.
-      - var nova: "{nova} + 1"
-      - var finalScore: "{finalScore} + 1"
-    - Wrong Choice:
-      - skylar says: That could've gone better.
-      - var nova: 2
+    - This'll be easy.:
+      - skylar says: Sweet. This'll be easy.
+      - show nova: normal
+      - nova says: Oh, just you wait.
+    - I'll be ready for anything and everything.:
+      - skylar says: Sweet. I'll try to be prepared for anything and everything.
+      - var nova1Score: "{nova1Score} + 1"
+      - nova says: Oh, just you wait.
+  - show nova: normal
+  - skylar says: ~Nova goes over different math topics, teaching us all the different ins and outs to each question.~
+  - nova says: For imaginary numbers, it is imperative that you remember i-squared is negative one.
+  - skylar says: ~Multiple times, she has to go over known equations, like...~
+  - nova says: sinx over cosx is equal to tanx. If I have to say it again, you're going out.
+  - skylar says: ~Everyone here knows so much, yet expresses it in different ways.~
+  - nova says: To find the area under the curve, you have to use-
+  - student1 says: Integrals!
+  - nova says: Yes. Spot on without any extra-
+  - student1 says: WWWRRRRRYYYYYYY
+  - skylar says: ~Then there's those people.~
+  - show nova: angry
+  - nova says: Kenny, I swear! You may be a genius, but one more time and I will call security to restrain you!
+  - skylar says: ~Another student sees my disturbed face and whispers to me.~
+  - student2 says: If you think this is bad, you haven't seen anything.
+  - skylar says: Really?
+  - student2 says: Really. He once went around blaring the old Red Nation Anthem. You know, the meme?
+  - skylar says: Welp, consider me fortunate.
+  - show nova: happy
+  - nova says: So, Skylar.
+  - skylar says: ~I quickly whip me head back to the front and panic.~
+  - skylar says: I was paying attention!
+  - nova says: If so, then what do you are integrals used for?
+  - choice:
+    - Area under the curve:
+      - var nova1Score: "{nova1Score} + 1"
+    - Integrating two equations:
+      - skylar says: It's in the name right? For integrating two equations?
+      - nova says: Oh? I thought you were paying attention.
+      - skylar says: ~Crap! The correct answer was actually...~
+    - I don't know. I just hit the skip button instead of playing the game.:
+      - skylar says: I'm sorry. I wasn't listening.
+      - show nova: normal
+      - nova says: Fine. Repeat after me. It is used for finding the area under the curve.
+  - skylar says: It is used for finding the area under the curve.
+  - nova says: Good. There's hope for you yet. What about i-squared?
+  - choice:
+    - Positive One:
+      - skylar says: Positive One, right?
+      - show nova: normal
+      - skylar says: ~Everyone either just shakes their head or facepalms.~
+    - Negative One:
+      - var nova1Score: "{nova1Score} + 1"
+    - Negative i:
+      - skylar says: Negative i, right?
+      - show nova: normal
+      - skylar says: ~Everyone either just shakes their head or facepalms.~
+  - skylar says: It's Negative One, isn't it?
+  - show nova: happy
+  - nova says: Good. You're actually paying attention. We can now move on.
+  - skylar says: ~The rest of the time continues without incident, all the way until the end of the period.~
+  - student1 says: Alright guys! It's time for the monthly Make-Nova-Laugh game!
+  - show nova: worried
+  - nova says: Oh, oh no. Not this again.
+  - skylar says: Is this like a tradition?
+  - student2 says: Sort of. Nova always puts up a cold exterior, so we all try to make her laugh.
+  - student2 says: We are usually successful, but it takes a while.
+  - student1 says: Skylar should go first! New kid initiation!
+  - show nova: normal
+  - skylar says: ~Nova steels her face as she looks at me dead in the eye.~
+  - skylar says: ~Did it just get colder?~
+  - skylar says: ~Nevermind that, Skylar. You have a task to complete.~
+  - skylar says: ~I should choose something that I know works.~
+  - choice:
+    - Sin-gerine over Cos-gerine equals Tan-gerine:
+      - var nova1Score: "{nova1Score} + 1"
+      - skylar says: ~Remembering what she taught today, I grab a tangerine from my bag, keeping it hidden.~
+      - skylar says: ~I walk up to the front whiteboard and grab a marker.~
+      - skylar says: Let's say, you have the value of -gerine.
+      - skylar says: ~There are some noises of confusion, but I go on.~
+      - skylar says: So for problem, you of sine of -gerine and cosine of -gerine.
+      - skylar says: When you put sine of -gerine over cosine of -gerine, you get...
+      - skylar says: ~I pull out the hidden fruit.~
+      - skylar says: Tan-gerine!
+      - skylar says: ~Silence.~
+      - skylar says: ~Then...~
+      - student1 says: AAAAYYYYYYYYY!!
+      - skylar says: AAAAYYYYYYYYY!
+      - show nova: laugh
+      - skylar says: ~The class erupts so much that they don't even notice Nova laughing.~
+      - show nova: surprised
+      - skylar says: ~When they do notice, she tries to hide, but to no success.~
+    - Write "laugh" on a piece of paper and give it to her:
+      - skylar says: ~Wordlessly, I grab my marker and dry erase board, not breaking eye contact with Nova.~
+      - skylar says: ~I do my best to write the word "laugh" on the paper.~
+      - skylar says: ~Once I'm sure I got it right, I hold my sign up.~
+      - skylar says: ~I hear laughs from everone else, but not from Nova.~
+      - skylar says: I made you "laugh."
+      - show nova: happy
+      - nova says: Are you sure about that?
+    - Fall over. That should work.:
+      - show nova: surprised
+      - skylar says: ~As I get up, I actually trip over the leg of the desk and fall over.~
+      - skylar says: ~There is only silence as I pick myself up.~
+      - student1 says: Was that the joke?
+      - student2 says: I don't think it was.
+      - nova says: Are you okay?
+      - skylar says: Yeah, but I think I'm gonna pass on the joke.
+    - Immature joke, because high school:
+      - show nova: angry
+      - skylar says: ~Before the words even leave my mouth, Nova's glare sharpens, piercing my every thought.~
+      - skylar says: ~I am frozen in place, unable to move.~
+      - skylar says: ~She knew. She knew and she did not approve.
+      - skylar says: Actually, guys, I'm gonna pass.
+      - skylar says: ~Everyone else groans and teases me, but it's better than facing Nova's wrath.
+  - if ({nova1Score} == 4):
+    - var nova: "{nova} + 1"
+    - var finalScore: "{finalScore} + 1"
+    - skylar says: ~Today was a good day. I grew closer to Nova and the Math Team.~
+    - skylar says: ~They may be an odd bunch, but that's what makes them unique.~
+    - skylar says: ~At the very least, Nova will keep them in check, so I should come back again.~
+  - else:
+    - var nova: 2
+    - skylar says: ~I don't think I did enough.~
+    - skylar says: ~Nova definitely thinks less of me now, probably since I've made a fool of myself.~
+    - skylar says: ~I'm probably not gonna get invited back.~
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
