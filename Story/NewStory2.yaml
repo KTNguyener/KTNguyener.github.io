@@ -715,7 +715,7 @@ veronica2:
   - show veronica: sad WITH FADE
   - skylar says: ~Veronica is inside, furiously sketching something.~
   - veronica says: ...no
-  - veroncia says: ...No no no...
+  - veronica says: ...No no no...
   - veronica says: ...no No NO!
   - skylar says: ~Suddenly, she throws her pencil across the room, kicks down her drawing stand, and tears her drawing into shreds.~
   - skylar says: ~A string of profanities spill from her mouth as she continues to destroy her creation.~
@@ -756,7 +756,7 @@ veronica2:
           - skylar says: I think at some point, we all have, but probably to a lesser degree that you feel.
           - skylar says: I have had those thoughts before, so I have a small understanding of what you're going through.
           - skylar says: Still, if you're willing to share, please do it. I'm here to hear.
-          - show veroncia: happy
+          - show veronica: happy
           - veronica says: Thank you.
         - I haven't because that's a harmful way to think:
           - skylar says: No. I haven't ever felt that way.
@@ -783,9 +783,30 @@ veronica2:
       - veronica says: These are the kind of thoughts that fill my mind. Do you understand how crippling that is? How persistant those thoughts are???
       - choice:
         - Then why think them?:
+          - skylar says: Then why even think them in the first place?
+          - skylar says: Why not purge those thoughts altogether? If they cripple you so much, why keep them?
+          - veronica says: That's what everyone doesn't get!
         - And you can't get rid of them, either:
           - var veronica2Score: "{veronica2Score} + 1"
           - skylar says: The worst part is that they are hard to get rid of as well.
+          - veronica says: Exactly. So many people don't get that.
+      - veronica says: For some strange reason, those thoughts never go away. No matter how positively I try to think, they always creep back.
+      - veronica says: Mocking me. Changing me. Pressuring me. Crippling me.
+      - veronica says: It's never enough. It's never enough.
+      - veronica says: It will never be enough.
+      - veronica says: It was never enough!
+      - veronica says: NOTHING! NOTHING I DO WILL EVER BE ENOUGH!
+      - choice:
+        - Nothing in life ever is, but you're not alone:
+          - var veronica2Score: "{veronica2Score} + 1"
+          - skylar says: Nothing in life ever is.
+        - Stop whining and get over yourself:
+          - skylar says: Everybody
+        - Please don't cry. I'm here:
+          - var nica: 2
+          - skylar says: Hey. Come here.
+          - skylar says: ~Wordlessly, I hug her as her tears run.~
+          - skylar says: 
     - Stay out of it:
       - var nica: 2
       - skylar says: ~I shouldn't be here. This is private and her business.~
