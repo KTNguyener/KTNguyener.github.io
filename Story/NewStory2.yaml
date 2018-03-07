@@ -236,8 +236,8 @@ start:
       - skylar says: Drowned in her sorrows.
       - show eli: laugh
       - eli says: YEAAAAAAAAAAAAAAAAH!
-      - skylar says: ~He then goes to sing the rest of the CSI theme, guitars and everything.~
-      - skylar says: ~Albeit quietly. Though, it still draws looks from surrounding classmates, who roll their eyes at his antics.~
+      - skylar says: ~He then goes to sing the rest of the CSI theme, guitars and everything, albeit quietly.~
+      - skylar says: ~Though, it still draws looks from surrounding classmates, who roll their eyes at his antics.~
       - skylar says: ~I guess this is normal for them.~
     - Agree with the tragicness:
       - skylar says: Everything that happened to her was awful.
@@ -814,10 +814,11 @@ veronica2:
           - skylar says: This may always be a part of you, but it doesn't have to be a burden.
           - skylar says: Relax. Let it flow through and out of you. Maybe even harness it to improve what you make instead of destroying it.
           - show veronica: normal
-          - skylar says: At the end of the day, you are you. What you say, make, and decide. Nobody else can change that except for you alone. However, and outside perspective doesn't hurt.
+          - skylar says: At the end of the day, you are you. What you say, make, and decide. Nobody else can change that except for you alone.
+          - skyalr says: However, and outside perspective doesn't hurt.
           - skylar says: Self-doubt may suck big-time, so speaking to someone other than yourself helps.
           - skylar says: Just choose the right people, the people who will at least try to understand, respect your wishes, and won't spew generic BS.
-          if ({veronica2Score} == 5):
+          - if ({veronica2Score} == 5):
             - var nica: 2
             - var finalScore: "{finalScore} + 1"
             - show veronica: happy
@@ -841,8 +842,19 @@ veronica2:
             - skylar says: ~Soon, the room is cleaned and we are ready to leave.~
             - skylar says: ~I'm glad Veronica was comfortable enough to share her problems with me.~
             - skylar says: ~Mostly, though, I'm happy that I was able to help her feel better. The future is looking up.~
+          - else:
+            - skylar says: ~Veronica nods before hugging me.~
+            - skylar says: ~However, it doesn't feel as meaningful.~
+            - skylar says: ~I may have said the right thing just now, but maybe I said some things before that were pretty insensitive.~
+            - skylar says: ~I guess I still trampled over some of her feelings.~
         - Stop whining and get over yourself:
-          - skylar says: Everybody
+          - var nica: 2
+          - skylar says: Everybody faces problems like these.
+          - skylar says: Stop overreacting and get over yourself. The world is full of problems, and your's are no different.
+          - hide veronica: WITH FADE
+          - skylar says: ~Veronica pushes me down and runs out the room.~
+          - skylar says: ~I don't care if that was a mean thing to say. People like those need to just stop.~
+          - skylar says: ~She might never talk to me again, but I made my choice.~
         - Please don't cry. I'm here:
           - var nica: 2
           - skylar says: ~Wordlessly, I hug her as her tears run.~
@@ -854,15 +866,7 @@ veronica2:
       - skylar says: ~I shouldn't be here. This is private and her business.~
       - hide veronica: WITH FADE
       - show corridor_evening:
-      - skylar says: ~I may have lost any chance of helping her, but that's my choice.
-  - choice:
-    - Right Choice:
-      - skylar says: That went well.
-      - var nica: "{nica} + 1"
-      - var finalScore: "{finalScore} + 1"
-    - Wrong Choice:
-      - skylar says: That could've gone better.
-      - var nica: 2
+      - skylar says: ~I may have lost any chance of helping her, but that's my choice.~
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
