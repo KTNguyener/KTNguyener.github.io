@@ -793,7 +793,7 @@ veronica2:
       - veronica says: That's the issue. I'm worried that I can no longer improve...
       - skylar says: What?
       - veronica says: Everyone always compliments me on what I do, but it's all relative.
-      - veronica says: It may look good to them, but to me, I can look like trash.
+      - veronica says: It may look good to them, but to me, it only looks like trash.
       - veronica says: I've drawn better. I've painted with more detail before. This is nowhere near my norm.
       - show veronica: sad
       - veronica says: These are the kind of thoughts that fill my mind. Do you understand how crippling that is? How persistant those thoughts are???
@@ -821,7 +821,7 @@ veronica2:
           - skylar says: However, time always moves forward.
           - show veronica: sorrow
           - skylar says: Things that seemed amazing just a few years ago now seem obsolete.
-          - skylar says: No matter how we move forward, we will always look back and think it's never enough.
+          - skylar says: No matter how far we move forward, we will always look back and think it's never enough.
           - veronica says: If you think like that, how do you cope? How do you not turn into...me?
           - skylar says: Short version?
           - skylar says: You're not alone. Even if you feel pulled apart in a million different directions, you are never truly alone.
@@ -831,7 +831,7 @@ veronica2:
           - skylar says: Relax. Let it flow through and out of you. Maybe even harness it to improve what you make instead of destroying it.
           - show veronica: normal
           - skylar says: At the end of the day, you are you. What you say, make, and decide. Nobody else can change that except for you alone.
-          - skyalr says: However, and outside perspective doesn't hurt.
+          - skylar says: However, and outside perspective doesn't hurt.
           - skylar says: Self-doubt may suck big-time, so speaking to someone other than yourself helps.
           - skylar says: Just choose the right people, the people who will at least try to understand, respect your wishes, and won't spew generic BS.
           - if ({veronica2Score} == 5):
