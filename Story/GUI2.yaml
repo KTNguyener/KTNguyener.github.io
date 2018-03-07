@@ -35,7 +35,7 @@ simpleGUI:
         y: 435
       textPosition:
         x: 36
-        y: 36
+        y: 25
       textStyle:
         font: 16pt open-sans
         wordWrap: true
