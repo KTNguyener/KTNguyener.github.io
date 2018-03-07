@@ -445,7 +445,20 @@ day4:
   - var day: 5
   - skylar says: This would be day four.
   - if ({finalScore} == 2):
-    - news says: In a shocking turn of events, a military parade has been cancelled
+    - news says: In a shocking turn of events, a military parade has been cancelled by the Dictator.
+    - news says: While information is sparse, the reason behind the cancellation is likely due to the display of peace shown by the protesters and police.
+    - news says: Sources say that the Dictator had second thoughts on provoking the President knowing that some people could be peaceful.
+    - news says: Rather than outright attack, the Dictator is taking time to understand.
+    - news says: We can only hope that the President does the same.
+  - else:
+    - news says: The Dictator's nation broadcasted a rather frightening display of his military might.
+    - news says: A military parade was displayed, armed with countless vehicles, weapons, and missiles.
+    - if ({finalScore} == 1):
+      - news says: The Dictator said that they will retaliate with every single one of those weapons if they are provoked.
+      - news says: We can only hope that it does not come to such a situation.
+    else:
+      - news says: The Dictator said that they fully intend to use every single one of those weapons on the President's barbaric people.
+      - news says: Time will only tell how this situation will pan out.
   - scene: selection
 
 day5:
@@ -485,6 +498,7 @@ day10:
   - text: Your final score is {finalScore}
   - if ({finalScore} <= 1):
     - text: Worst end
+    - scene: end1
   - if ({finalScore} <= 3):
     - text: Bad end
   - if ({finalScore} <= 5):
@@ -1338,6 +1352,12 @@ nova2:
     - scene: day10
 
 end1:
+  - show classroom_day:
+  - play morningBGM:
+  - skylar says: ~After alienating my classmates, time seemed to just pass.~
+  - skylar says: ~The daily grind came about again. So much so that I didn't pay attention to the news.~
+  - skylar says: ~Insert nuclear siren~
+  - skylar says: ~Not until it was too late.~
 
 end2:
 
@@ -1346,3 +1366,5 @@ end3:
 end4:
 
 end5:
+  - show living_day:
+  - news says: In an astonishing turn of events, the President and the Dictator are meeting today to sign a treaty of peace.
