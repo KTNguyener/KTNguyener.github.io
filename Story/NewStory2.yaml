@@ -427,7 +427,6 @@ day2:
 day3:
   - show living_day:
   - var day: 4
-  - skylar says: This would be day three.
   - if ({finalScore} == 1):
     - news says: A small sliver of hope emerges today as a protest about to turn violent was resolved.
     - news says: According to eyewitness reports, the conflict was resolved by a simple exchange between a protester and a policeman.
@@ -442,9 +441,11 @@ day3:
   - scene: selection
 
 day4:
-  - show school_morning:
+  - show living_day:
   - var day: 5
   - skylar says: This would be day four.
+  - if ({finalScore} == 2):
+    - news says: In a shocking turn of events, a military parade has been cancelled
   - scene: selection
 
 day5:
@@ -511,6 +512,8 @@ selection:
   - var novaStranger: "{nova} == 0"
   - var novaAquaintence: "{nova} == 1"
   - var novaFriend: "{nova} == 2"
+  - if (({nicaFriend} && {jaxFriend}) && ({eliFriend} && {novaFriend})):
+    - scene: day10
   - choice:
     - Veronica:
       - if ({nicaFriend}):
@@ -599,6 +602,7 @@ veronica1:
   - show veronica: normal
   - skylar says: ~After choosing a simple color palette, we start.~
   - skylar says: ~Veronica wants to see my current ability, so I work on my own painting while she finishes up some school work.~
+  - skylar says: ~She said that we'll talk after I finish.~
   - choice:
     - Strike up a small conversation:
       - skylar says: ~I try to talk to Veronica as I work.~
@@ -703,8 +707,6 @@ veronica1:
 veronica2:
   - show corridor_evening:
   - play morningBGM:
-  - text: This is veronica 2.
-  - text: It is day {day}.
   - var veronica2Score: 0
   - skylar says: ~What a long day.~
   - skylar says: ~Despite Veronica cancelling our session, I still had to stay after for some make-up work.~
