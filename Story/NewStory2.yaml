@@ -1,7 +1,7 @@
 start:
   - show room_day:
   - play morningBGM:
-  - text: version 1.0.13
+  - text: version 1.0.14
   - var nica: 0
   - var nova: 0
   - var jax: 0
@@ -456,7 +456,7 @@ day4:
     - if ({finalScore} == 1):
       - news says: The Dictator said that they will retaliate with every single one of those weapons if they are provoked.
       - news says: We can only hope that it does not come to such a situation.
-    else:
+    - else:
       - news says: The Dictator said that they fully intend to use every single one of those weapons on the President's barbaric people.
       - news says: Time will only tell how this situation will pan out.
   - scene: selection
