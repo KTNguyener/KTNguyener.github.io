@@ -800,13 +800,55 @@ veronica2:
         - Nothing in life ever is, but you're not alone:
           - var veronica2Score: "{veronica2Score} + 1"
           - skylar says: Nothing in life ever is.
+          - skylar says: ~She looks at me like she's about to yell.~
+          - skylar says: Think about it. We can build the biggest vehicles, create the smartest computers, make the greatest art pieces.
+          - skylar says: However, time always moves forward.
+          - show veronica: sorrow
+          - skylar says: Things that seemed amazing just a few years ago now seem obsolete.
+          - skylar says: No matter how we move forward, we will always look back and think it's never enough.
+          - veronica says: If you think like that, how do you cope? How do you not turn into...me?
+          - skylar says: Short version?
+          - skylar says: You're not alone. Even if you feel pulled apart in a million different directions, you are never truly alone.
+          - skylar says: I had my parents to help me each move.
+          - skylar says: You have your friends to help you through this.
+          - skylar says: This may always be a part of you, but it doesn't have to be a burden.
+          - skylar says: Relax. Let it flow through and out of you. Maybe even harness it to improve what you make instead of destroying it.
+          - show veronica: normal
+          - skylar says: At the end of the day, you are you. What you say, make, and decide. Nobody else can change that except for you alone. However, and outside perspective doesn't hurt.
+          - skylar says: Self-doubt may suck big-time, so speaking to someone other than yourself helps.
+          - skylar says: Just choose the right people, the people who will at least try to understand, respect your wishes, and won't spew generic BS.
+          if ({veronica2Score} == 5):
+            - var nica: 2
+            - var finalScore: "{finalScore} + 1"
+            - show veronica: happy
+            - veronica says: Like who? You?
+            - skylar says: ~Suddenly, the room gets a bit warmer.~
+            - skylar says: Umm...yeah...sure.
+            - skylar says: I mean...I think someone as talented as you could choose someone better than me.
+            - show veronica: laugh
+            - skylar says: ~She lets out a short, croaked laugh.~
+            - veronica says: Someone just told me to be confident in my decisions. Someone very talkative about the topic.
+            - show veronica: happy
+            - veronica says: On a more serious note, what you said sounds true.
+            - veronica says: I know I am putting too much pressure on myself, but I've only been trying to suppress it.
+            - veronica says: If I just accept it, and let it flow and balance, maybe that'll work for the better.
+            - skylar says: Just remember - No matter what, you're never alone.
+            - show veronica: embarressed
+            - veronica says: ...Thank you...for today.
+            - veronica says: Others have talked to me before, but I think you're the first one who's seen me so low, yet...
+            - skylar says: Think nothing of it. It doesn't change the fact that you are still kind, passionate, and amazing at art.
+            - veronica says: Still, you listening to my problems...respecting my patience...that means a lot. Thank you.
+            - skylar says: ~Soon, the room is cleaned and we are ready to leave.~
+            - skylar says: ~I'm glad Veronica was comfortable enough to share her problems with me.~
+            - skylar says: ~Mostly, though, I'm happy that I was able to help her feel better. The future is looking up.~
         - Stop whining and get over yourself:
           - skylar says: Everybody
         - Please don't cry. I'm here:
           - var nica: 2
-          - skylar says: Hey. Come here.
           - skylar says: ~Wordlessly, I hug her as her tears run.~
-          - skylar says: 
+          - skylar says: ~All I can do is stand as she shakes in my arms.~
+          - skylar says: ~I may be here for her now, but I was not able to pull her back up.~
+          - skylar says: ~Until that day, this is all I can do.~
     - Stay out of it:
       - var nica: 2
       - skylar says: ~I shouldn't be here. This is private and her business.~
