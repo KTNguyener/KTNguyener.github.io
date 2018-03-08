@@ -165,6 +165,9 @@ setup:
   cgs:
     phone1: assets/objects/phone1.png
   music:
+    memoriesBGM: assets/audio/memories.mp3
+    acousticBGM: assets/audio/bensound-acousticbreeze.mp3
+    sadBGM: assets/audio/bensound-betterdays.mp3
     rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
     morningBGM: assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3
     storeBGM: assets/audio/Evan_Schaeffer_-_18_-_Big_Tree.mp3

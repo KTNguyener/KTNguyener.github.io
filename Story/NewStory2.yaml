@@ -1,6 +1,6 @@
 start:
   - show room_day:
-  - play morningBGM:
+  - play memoriesBGM:
   - text: version 1.0.14
   - var nica: 0
   - var nova: 0
@@ -720,7 +720,7 @@ veronica1:
 
 veronica2:
   - show corridor_evening:
-  - play morningBGM:
+  - play sadBGM:
   - var veronica2Score: 0
   - skylar says: ~What a long day.~
   - skylar says: ~Despite Veronica cancelling our session, I still had to stay after for some make-up work.~
