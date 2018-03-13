@@ -1,7 +1,14 @@
 start:
   - show room_day:
   - play memoriesBGM:
-  - text: version 1.0.14
+  - text: Welcome to Peaceful Days, a Visual Novel Created by Kiva Nguyen.
+  - text: To advance, click anywhere on the screen.
+  - text: To the right, the Play button on the bottom left triggers auto mode, which automatically advances the story.
+  - text: To the bottom right, the Fast Forward Button will speed through the story and stop on a choice.
+  - text: The top left button opens options while the top right button saves your progress.
+  - text: There are 5 endings to the game that depend on your choices. Try to find them all!
+  - text: To restart the game, simply refresh the page.
+  - text: Good Luck!
   - var nica: 0
   - var nova: 0
   - var jax: 0
@@ -281,14 +288,15 @@ start:
   - eli says: Sweet! I'll see you there.
   - skylar says: ~Eli and I part ways, waving goodbye as we walk away.
   - hide eli: WITH FADE
-  - skylar says: ~Philosophy time.~
-  - skylar says: ~The one class we can ramble and still sound smart.~
-  - skylar says: ~This is gonna be fun.~
-  - show classroom_day:
-  - show jax: normal AT RIGHT WITH FADE
-  - jax says: Sample text because I'm too lazy to write this character right now.
-  - hide jax: WITH FADE
-  - show corridor_day:
+  #  - skylar says: ~Philosophy time.~
+  #  - skylar says: ~The one class we can ramble and still sound smart.~
+  #  - skylar says: ~This is gonna be fun.~
+  #  - show classroom_day:
+  #  - show jax: normal AT RIGHT WITH FADE
+  #  - jax says: Sample text because I'm too lazy to write this character right now.
+  #  - hide jax: WITH FADE
+  #  - show corridor_day:
+  - skylar says: ~Nothing eventful happened in lunch or 3rd period, so soon, I found the day ending.~
   - skylar says: ~Final class of the day. Math.~
   - skylar says: ~A core class I'm actually pretty decent in.~
   - show classroom_day:
@@ -410,6 +418,13 @@ start:
       - skylar says: The less said, the better.
   - skylar says: ~We continue the drive home in comforting silence.~
   - skylar says: ~I can see dad is still on edge from work, but he's doing a good job hiding it.~
+  - dad says: Hey Sky...I have to travel overseas.
+  - skylar says: Again? Why?
+  - dad says: Negotiations. They're hoping that we can solve this situation peacefully.
+  - dad says: I don't know how long I'll be gone, but while I am, you take care of your mother, okay?
+  - skylar says: Of course I will, Dad.
+  - skylar says: ~He nods, breathing out.~
+  - skylar says: ~Another reminder that everything can still change in an instant.~
   - skylar says: ~All I know for sure is that this is my life now until graduation.~
   - skylar says: ~The days will become monotomous with a few events breaking up the daily grind.~
   - skylar says: ~After all, that's how life has always been for me.~
@@ -443,7 +458,6 @@ day3:
 day4:
   - show living_day:
   - var day: 5
-  - skylar says: This would be day four.
   - if ({finalScore} == 2):
     - news says: In a shocking turn of events, a military parade has been cancelled by the Dictator.
     - news says: While information is sparse, the reason behind the cancellation is likely due to the display of peace shown by the protesters and police.
@@ -454,7 +468,7 @@ day4:
     - news says: The Dictator's nation broadcasted a rather frightening display of his military might.
     - news says: A military parade was displayed, armed with countless vehicles, weapons, and missiles.
     - if ({finalScore} == 1):
-      - news says: The Dictator said that they will retaliate with every single one of those weapons if they are provoked.
+      - news says: The Dictator said that they will only retaliate with every single one of those weapons if they are provoked.
       - news says: We can only hope that it does not come to such a situation.
     - else:
       - news says: The Dictator said that they fully intend to use every single one of those weapons on the President's barbaric people.
@@ -462,29 +476,236 @@ day4:
   - scene: selection
 
 day5:
-  - show school_morning:
+  - show living_day:
   - var day: 6
-  - skylar says: This would be day five.
+  #finalScore would be 3 if all went well.
+  - news says: A new trend on the internet may be the key to achieving world peace.
+  - news says: Although seemingly farfetched, the concept is fairly simple.
+  - news says: Students around the world are choosing to talk to each other in a randomised fasion.
+  - news says: One student says that the intention is to try and bridge gaps that many people make.
+  - news says: By taking this first step, they are hoping to increase international relationships across the world.
+  - news says: As another student put it, we are the reflection of what happens in the world.
+  - news says: In this time of crisis, is their plan even remotely close to working?
   - scene: selection
 
 day6:
-  - show school_morning:
+  - show living_day:
   - var day: 7
-  - skylar says: This would be day six.
+  - if ({finalScore} == 4):
+    - news says: It seems that the efforts of the younger generations are having small effects on the older ones.
+    - news says: For the first time in a while, the President and the Dictator have decided to stay silent.
+    - news says: Inside sources say that the World Leaders, after seeing so many others acting, have decided to do some self reflection.
+    - news says: No more antagonistic comments have been heard from either side.
+    - news says: It seems the persistence and understanding of the children have pushed the adults to new actions.
+  - else:
+    - if ({finalScore} >= 2):
+      - news says: There has been some effect of the new generation's trend.
+      - news says: Although some insults have been said, no more violent action has occured between the our two nations.
+      - news says: Inside sources say that the World Leaders, after seeing so many others acting, have decided to do some self reflection.
+      - news says: Perhaps there is hope for change after all.
+    - else:
+      - news says: It seems like the efforts of the children have had no effect after all.
+      - news says: Despite the efforts of many, not enough people took action.
+      - news says: To quote a student, he asked what was the point of trying if the world leaders will destroy each other anyway?
+      - news says: And destroy they may. More military parades and antangonistic comments have occured, causing the situation to deteriorate.
   - scene: selection
 
 day7:
-  - show school_morning:
+  - show living_day:
   - var day: 8
-  - skylar says: This would be day seven.
+  - if ({finalScore} >= 5):
+    - skylar says: ~I expect to start my early morning with the news, like always.~
+    - skylar says: ~What I don't expect is to see Dad already home.~
+    - dad says: Hey Sky!
+    - skylar says: Dad! You're home early!
+    - skylar says: ~I hug him tightly.~
+    - skylar says: What happened?
+    - dad says: Ever since that new trend, people have been more relaxed lately.
+    - dad says: So relaxed, in fact, that my job became significantly easier.
+    - dad says: I was able to schedule a peace meeting between the President and the Dictator easily.
+    - dad says: So here I am, home early.
+    - skylar says: Does mom know?
+    - dad says: I'm hoping to surprise her. Do you need a ride to school?
+    - skylar says: I got it covered. Go to mom. She misses you.
+    - dad says: Thanks, Skylar. Have a good day!
+    - skylar says: ~As I leave the door, I hear an excited shout and some laughter.~
+  - else:
+    - if ({finalScore} >= 1):
+      - skylar says: ~When I wake up, I hear Mom talking downstairs.~
+      - skylar says: ~Once I get down, I realize she's video calling Dad.~
+      - mom says: Good morning, Skylar.
+      - dad says: Hey Sky!
+      - skylar says: Morning. How's is going, Dad?
+      - if ({finalScore} >= 3):
+        - dad says: Pretty good, actually.
+        - dad says: I've been making some progress with the negotiations, and the recent trend has helped.
+        - dad says: At the very least, I think we can get the President and the Dictator in the same room without them killing each other.
+        - dad says: It's been slow work, but we are definitely making progress.
+        - skylar says: ~After talking a little more, I realize I am running late, so Mom and I bolt to the car and leave.~
+      - else:
+        - dad says: Not too good, unfortunetely.
+        - dad says: Everyone here is still on edge, and some of the recent events have only increased tensions.
+        - dad says: It's slow work, and I don't know if we'll even make any progress, but we're gonna keep trying.
+        - skylar says: ~After talking a little more, I realize I am running late, so Mom and I bolt to the car and leave.~
+    - else:
+      - skylar says: ~When I head downstairs, all I can hear is Mom crying.~
+      - skylar says: Mom? What's wrong?
+      - mom says: It's...you father. He's in the hospital.
+      - skylar says: What?!
+      - mom says: Apparently, the meeting got violent, and...he took a bullet to his stomach.
+      - mom says: He's in critical condition, and the doctors don't know if he will live.
+      - skylar says: ~I don't know what to do. Mindlessly, I call the school and try to tell them the situation.~
+      - skylar says: ~Luckily, they somehow understand, and I am excused for today.~
+      - skylar says: ~For the rest of the day, I comfort Mom, hoping that tomorrow will be better.~
   - scene: selection
 
 day8:
-  - show school_morning:
   - var day: 9
-  - skylar says: This would be day eight.
-  - scene: selection
-
+  - if ({finalScore} == 0):
+    - show classroom_day:
+    - play sadBGM:
+    - skylar says: ~After alienating my classmates, time seemed to just pass.~
+    - skylar says: ~The daily grind came about again. So much so that I didn't pay attention to the news.~
+    - skylar says: ~I didn't see the deterioration of our internatinal relationships.~
+    - skylar says: ~I didn't hear the heated debates, the harsh yelling, or the call to war.~
+    - skylar says: ~I didn't notice all the warnings and the signs.~
+    - play sirenSFX:
+    - show classroom_evening:
+    - skylar says: ~Not until it was too late.~
+    - skylar says: ~I guess the last thing I see will the be the sky on fire.~
+    - effect SHOWTITLE:
+      title: Ending 1
+      subtitle: Nuclear Missile
+    - text: Looks like you got the worst of the five endings.
+    - text: The ending that you end up with depends on the choices you made.
+    - text: As a protip, your choices don't matter until you get to each character's individual story.
+    - text: The first day decisions only give more story context.
+    - text: Try to pay more attention to each person's wants and needs, and you may end up with a better ending.
+  - if (({finalScore} == 1) || ({finalScore} == 2)):
+    - show living_day:
+    - play sadBGM:
+    - skylar says: ~My eyes are glued on the television. I can't believe what I'm seeing.~
+    - news says: This has been officially confirmed. War has been declared. I repeat, war has been declared.
+    - news says: As I speak, the Dictator is preparing missiles as the President mobilizes the Navy.
+    - news says: More news will be about protocols, precautions, and drafts will be available later, but as of right now, we are at war.
+    - skylar says: ~This is the world I live in now.~
+    - skylar says: ~A world where seemingly everything is out of our control.~
+    - skylar says: ~Could I have done anything to prevent this? Could anyone have prevented this other than the world leaders?~
+    - skylar says: ~I guess we'll never know. That was then. This is now.~
+    - effect SHOWTITLE:
+      title: Ending 2
+      subtitle: March to War
+    - text: You have gotten the second worst of the five endings.
+    - text: The ending that you end up with depends on the choices you made.
+    - text: As a protip, your choices don't matter until you get to each character's individual story.
+    - text: The first day decisions only give more story context.
+    - text: Try to pay more attention to each person's wants and needs, and you may end up with a better ending.
+    - text: Or, alienate everybody super fast and get the worst ending.
+  - if (({finalScore} == 3) || ({finalScore} ==4)):
+    - show living_day:
+    - play memoriesBGM:
+    - skylar says: ~I sit in front of the TV, eating breakfast.~
+    - skylar says: ~Apparently, nothing happened.~
+    - skylar says: ~The peace talks that were set up resulted in pretty much nothing.~
+    - skylar says: ~On the bright side, war is out of the picture. None of our nations will have a violent conflict.~
+    - skylar says: ~On the other hand, peace is nowhere near happening. We are simply going back to yelling insults at each other across the sea.~
+    - skylar says: ~I wonder if there was anything I could have done. Anything we could have done.~
+    - skylar says: ~Either way, life will go on.
+    - effect SHOWTITLE:
+      title: Ending 3
+      subtitle: Life Goes On
+    - text: You have gotten the normal ending, where nothing consequential happens.
+    - text: The ending that you end up with depends on the choices you made.
+    - text: As a protip, your choices don't matter until you get to each character's individual story.
+    - text: The first day decisions only give more story context.
+    - text: Try to pay more attention to each person's wants and needs, and you may end up with a better ending.
+    - text: Or, alienate everybody super fast and get the worst ending.
+  - if ({finalScore} == 5):
+    - show living_day:
+    - play memoriesBGM:
+    - skylar says: ~I have a smile on my face as I watch the news.~
+    - news says: As you can see, the President and the Dictators are shaking hands behind me.
+    - news says: Both have agreed to cease hostilities between their two nations.
+    - news says: In addition, trade and aid between the two countries will be opened, sparking a new era of cooperation.
+    - news says: While there are still tensions between certain topics, peace is now becoming a viable option.
+    - skylar says: You did it, dad. You did it.
+    - skylar says: ~Still, I can't help but feel my generation had a part in it as well.~
+    - skylar says: ~We chose not to follow our leaders and carve our own path for peace.~
+    - skylar says: ~Once we took that first step, more followed.~
+    - skylar says: ~In fact, they are still following us to this day.~
+    - skylar says: ~I guess in the end, we really can make a difference.~
+    - effect SHOWTITLE:
+      title: Ending 4
+      subtitle: Road to Peace
+    - text: You've gotten the second best ending. The world is on a path towards peace.
+    - text: The ending that you end up with depends on the choices you made.
+    - text: As a protip, your choices don't matter until you get to each character's individual story.
+    - text: The first day decisions only give more story context.
+    - text: Try to pay more attention to each person's wants and needs, and you may end up with an even better ending.
+    - text: Or, alienate everybody super fast and get the worst ending.
+  - if ({finalScore} == 6):
+    - show room_day:
+    - play acousticBGM:
+    - dad says: Sky! Wake up?
+    - skylar says: Uhhgg, what is it? It's so early?
+    - mom says: You have to see the news, quick!
+    - skylar says: ~With all of my strength, I roll out of my bed and onto the floor with a THUD.~
+    - skylar says: I'm up!
+    - dad says: Great! Come downstairs, now!
+    - show living_day:
+    - news says: This is not a prank, ladies and gentlemen!
+    - news says: What you are seeing here is the genuine signing of a peace treaty between the President and the Dictator!
+    - news says: Here they are now, shaking hands and smiling.
+    - news says: Countless other countries are looking to these two leaders as prime examples of the future.
+    - news says: World peace is possible, and now many others are striving to it.
+    - news says: The collective efforts from countless people from all walks of life across the world have paid off.
+    - dad says: Would you look at that?
+    - skylar says: ~For once, all three of us are sitting together, absolutely hopeful for the future.~
+    - mom says: It gets even better. School was just cancelled. You guys got the day off.
+    - skylar says: Sweet!
+    - skylar says: Can I...go out with my friends?
+    - dad says: Sure! Need a ride?
+    - skylar says: Nah, I'll be good. You and Mom have more catching up to do.
+    - skylar says: ~I can't stop the smile that is on my face.~
+    - skylar says: ~For once, things are looking up for the better.~
+    - skylar says: ~For once, our collective actions made a difference.~
+    - skylar says: ~For once, we can look forward to our Peaceful Days.~
+    - effect SHOWTITLE:
+      title: Ending 5
+      subtitle: Peaceful Days
+    - text: Congratulations! You have achieved the best ending in the game!
+    - text: For future playthroughs, keep in mind that your choices affect the ending of the game.
+    - text: As a protip, your choices don't matter until you get to each character's individual story.
+    - text: The first day decisions only give more story context.
+    - text: Try alienating people if you want to get some of the worse endings.
+  - effect ROLLINGCREDITS:
+    endGame: true
+    text:
+      - Peaceful Days created
+      - and written by
+      - Kiva Nguyen
+      - null
+      - Created using the
+      - RenJS Game Engine
+      - null
+      - RenJS developed by
+      - lunafromthemoon
+      - null
+      - Inspired by Ren'Py
+      - Powered by PhaserJS
+      - null
+      - Background Art and CGs by
+      - Kimagure at
+      - http://k-after.at.webry.info/
+      - null
+      - Characters by
+      - Tokudaya at
+      - http://tokudaya.net/index.html
+      - null
+      - Music from
+      - https://www.bensound.com/
+      - null
+      - Thanks for playing!
 day9:
   - show school_morning:
   - var day: 10
@@ -492,13 +713,21 @@ day9:
   - scene: selection
 
 day10:
-  - show school_morning:
-  - skylar says: This would be day 10
-  - skylar says: At this point, the ending will be determined
-  - text: Your final score is {finalScore}
   - if ({finalScore} <= 1):
-    - text: Worst end
-    - scene: end1
+    - show classroom_day:
+    - play sadBGM:
+    - skylar says: ~After alienating my classmates, time seemed to just pass.~
+    - skylar says: ~The daily grind came about again. So much so that I didn't pay attention to the news.~
+    - skylar says: ~I didn't notice all the warnings and the signs.~
+    - play sirenSFX:
+    - skylar says: ~Not until it was too late.~
+    - show classroom_evening: WITH FADETOWHITE
+    - text: Ending 1 - Nuclear Missile. The Worst Ending.
+    - text: Looks like you got the worst of the five endings.
+    - text: The ending that you end up with depends on the choices you made.
+    - text: As a protip, your choices don't matter until you get to each character's individual story.
+    - text: The first day decisions only give more story context.
+    - text: Try to pay more attention to each person's wants and needs, and you may end up with a better ending.
   - if ({finalScore} <= 3):
     - text: Bad end
   - if ({finalScore} <= 5):
@@ -512,22 +741,24 @@ day10:
 
 selection:
   - show corridor_day:
-  - play morningBGM:
-  - text: Who should I spend time with today?
+  - play acousticBGM:
   - var nicaStranger: "{nica} == 0"
   - var nicaAquaintence: "{nica} == 1"
   - var nicaFriend: "{nica} == 2"
-  - var jaxStranger: "{jax} == 0"
-  - var jaxAquaintence: "{jax} == 1"
-  - var jaxFriend: "{jax} == 2"
+  #  - var jaxStranger: "{jax} == 0"
+  #  - var jaxAquaintence: "{jax} == 1"
+  #  - var jaxFriend: "{jax} == 2"
   - var eliStranger: "{eli} == 0"
   - var eliAquaintence: "{eli} == 1"
   - var eliFriend: "{eli} == 2"
   - var novaStranger: "{nova} == 0"
   - var novaAquaintence: "{nova} == 1"
   - var novaFriend: "{nova} == 2"
-  - if (({nicaFriend} && {jaxFriend}) && ({eliFriend} && {novaFriend})):
-    - scene: day10
+  - if (({nicaFriend}) && ({eliFriend} && {novaFriend})):
+    - skylar says: Nobody wants to see me today.
+    - skylar says: I guess I'm either on good enough terms or I alienated them.
+    - scene: day8
+  - text: Who should I spend time with today?
   - choice:
     - Veronica:
       - if ({nicaFriend}):
@@ -537,14 +768,14 @@ selection:
         - scene: veronica1
       - if ({nicaAquaintence}):
         - scene: veronica2
-    - Jax:
-      - if ({jaxFriend}):
-        - skylar says: He doesn't want to see me.
-        - scene: selection
-      - if ({jaxStranger}):
-        - scene: jax1
-      - if ({jaxAquaintence}):
-        - scene: jax2
+  #    - Jax:
+  #      - if ({jaxFriend}):
+  #        - skylar says: He doesn't want to see me.
+  #        - scene: selection
+  #      - if ({jaxStranger}):
+  #        - scene: jax1
+  #      - if ({jaxAquaintence}):
+  #        - scene: jax2
     - Elijah:
       - if ({eliFriend}):
         - skylar says: He doesn't want to see me.
@@ -564,7 +795,7 @@ selection:
 
 veronica1:
   - show classroom_evening:
-  - play morningBGM:
+  - play memoriesBGM:
   - var veronica1Score: 0
   - show veronica: normal WITH FADE
   - veronica says: Hey! You're here!
@@ -904,7 +1135,7 @@ veronica2:
 
 jax1:
   - show school_morning:
-  - play morningBGM:
+  - play acousticBGM:
   - text: This is jax 1.
   - text: It is day {day}.
   - choice:
@@ -968,7 +1199,7 @@ jax2:
 
 eli1:
   - show classroom_evening:
-  - play morningBGM:
+  - play acousticBGM:
   - var eli1Score: 0
   - skylar says: ~I walk into the classroom to see the desks arranged in a circle.~
   - show eli: happy WITH FADE
@@ -1135,18 +1366,116 @@ eli1:
     - scene: day10
 
 eli2:
-  - show school_morning:
-  - play morningBGM:
-  - text: This is eli 2.
-  - text: It is day {day}.
+  - show house_evening:
+  - var eli2Score: 0
+  - play sadBGM:
+  - skylar says: ~Lately, Eli hasn't been showing up to drama club.~
+  - skylar says: ~Some of us have tried to contact him, but nobody knows his phone number.~
+  - skylar says: ~In fact, people have been saying he doesn't own a phone.~
+  - skylar says: ~Luckily, somebody did know his address, so I'm going to check up on him.~
+  - skylar says: ~I knock on his door a few times before he answers.~
+  - show eli: surprisedC WITH FADE
+  - eli says: Skylar? What are you doing here?
+  - skylar says: I came to check up on you. You've been missing Drama Club and nobody knows why.
+  - show eli: normalC
+  - eli says: It's...complicated. Promise not to tell anyone? Please?
   - choice:
-    - Right Choice:
-      - skylar says: That went well.
-      - var eli: "{eli} + 1"
-      - var finalScore: "{finalScore} + 1"
-    - Wrong Choice:
-      - skylar says: That could've gone better.
+    - No promises:
       - var eli: 2
+      - skylar says: I can't promise anything. Sorry.
+      - eli says: It's okay. I understand, but don't worry about me.
+      - show eli: happyC
+      - eli says: I'll be fine.
+      - hide eli: WITH FADE
+      - skylar says: ~Before I can say anything else, he closes the door.~
+      - skylar says: ~If he says he's fine, he should be fine, but somehow, I don't think that's the full story.~
+      - skylar says: ~I guess it's my fault for not promising his secrecy.~
+    - I promise:
+      - var eli2Score: "{eli2Score} + 1"
+      - skylar says: Of course. Your business is yours alone. If you're willing to share with me, that's fine.
+      - eli says: Thanks. Would you like to come in?
+      - skylar says: Sure.
+      - show living_evening:
+      - skylar says: ~Eli's house his sparse, but well kept.~
+      - skylar says: ~Out of the corner of my eye, I see a picture.~
+      - skylar says: ~It looks like a young Eli and his two parents.~
+      - skylar says: ~However, I don't see his dad in any other future pictures.~
+      - eli says: If you're wondering where Dad is, he's not here anymore.
+      - skylar says: ...what?
+      - eli says: Yup. Died overseas in the war.
+      - skylar says: I'm...sorry. I didn't know.
+      - eli says: Don't be. You're new, and even so, it's not something I go telling everybody.
+      - skylar says: Alright. Thanks. You were going to tell me why you haven't been at Drama Club?
+      - show eli: sorrowC
+      - eli says: The reason is actually simple. I've...been working more jobs.
+      - skylar says: That's...not as bad as I was expecting.
+      - eli says: It's just...Mom and I have been struggling to make ends meet.
+      - eli says: The cost of living has only gone up, and Mom has been working late for a while now.
+      - eli says: I want to help, but she absolutely refuses to use the money Dad left behind for my college.
+      - eli says: So I've been trying to work more to help her out any way I can.
+      - eli says: Does...this...change how you think of me?
+      - skylar says: ~He has a pleading look in his eye, like he hopes I don't feel any different.~
+      - choice:
+        - Of course not:
+          - var eli2Score: "{eli2Score} + 1"
+          - skylar says: Of course not, man.
+          - show eli: surprisedC
+          - eli says: Really?
+          - skylar says: Yeah! At the end of the day, you're still Eli.
+          - skylar says: The eccentric actor who knows way too much about theatre and English.
+          - show eli: normalC
+        - Yeah, a little:
+          - skylar says: Maybe just a little.
+          - skylar says: What you've told me is a lot to take in, and it changes how I perceive you a bit.
+          - skylar says: But...
+      - skylar says: I may know a bit more of your circumstances, but that doesn't change who you are.
+      - eli says: Still, that doesn't change said circumstances.
+      - eli says: It doesn't change the fact that Mom is still gonna be working late every night.
+      - eli says: It doesn't change the fact that I'm gonna have to miss doing what I love in order to stay alive.
+      - show eli: sorrowC
+      - eli says: It doesn't change the fact that Dad isn't coming back.
+      - eli says: Until things look up, I'm gonna have to keep working.
+      - eli says: We'll have to keep living on the edge of poverty.
+      - eli says: It'll just take one rainy day to throw our lives into chaos.
+      - choice:
+        - I'm sorry I can't do anything:
+          - skylar says: I'm...sorry I can't do anything.
+          - eli says: It's okay. That's just how life is for us.
+          - eli says: Hey, you still promise to not tell anyone?
+          - skylar says: I won't. Don't worry about it.
+          - show eli: happyC
+          - eli says: Thanks.
+          - skylar says: ~I can't help but feel like I could've at least mentioned a possibility of helping him.~
+          - skylar says: ~However, he has his private life and I have mine.~
+          - skylar says: ~I have chosen to ignore his, but was that the best option?~
+        - I can spot you if things go south:
+          - var eli2Score: "{eli2Score} + 1"
+          - skylar says: You know, I can spot you if things go really bad.
+          - show eli: surprisedC
+          - eli says: You would what?
+          - skylar says: I'm pretty frugal with the money I have, and I've built up some savings.
+          - eli says: But...I can't just take your money.
+          - skylar says: You won't. It's a loan with a return limit of 99 years. Zero percent interest.
+          - eli says: Skylar...I don't know what to say.
+          - skylar says: You don't have to say anything. That's what friends are for.
+          - if ({eli2Score} == 3):
+            - var eli: "{eli} + 1"
+            - var finalScore: "{finalScore} + 1"
+            - eli says: You have no idea how much this means to me. I've been so afraid of revealing this part of my life, yet...
+            - skylar says: You have other friends, right? How come you haven't told any of them?
+            - show eli: sorrowC
+            - eli says: I...was afraid. I was afraid of getting judged and having to hear their pity.
+            - eli says: I didn't want to be the kid who lost his Dad and lives on the brink of collapse.
+            - skylar says: Well, don't worry about it. Your secret is safe with me. Only you hold the power of revealing it.
+            - eli says: Thanks, Skylar.
+            - skylar says: ~I guess we all have our secrets we rather not share.~
+            - skylar says: ~I'm glad that Eli was willing to share his with me.~
+            - skylar says: ~I hope this means we can look toward a brighter future.~
+          - else:
+            - var eli: 2
+            - skylar says: ~Eli wordlessly nods before we exchange more words, then I leave.~
+            - skylar says: ~I might've promised him my help, but I told him that I thought of him differently because of his circumstances.~
+            - skylar says: ~Because of that, I think I hurt him.~
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
@@ -1168,7 +1497,7 @@ eli2:
 
 nova1:
   - show classroom_evening:
-  - play morningBGM:
+  - play acousticBGM:
   - var nova1Score: 0
   - show nova: happy WITH FADE
   - nova says: Skylar. You made it.
@@ -1320,18 +1649,144 @@ nova1:
     - scene: day10
 
 nova2:
-  - show school_morning:
-  - play morningBGM:
-  - text: This is nova 2.
-  - text: It is day {day}.
+  - show corridor_evening:
+  - play sadBGM:
+  - var nova2Score: 0
+  - skylar says: ~Can't wait to see those ridiculous chumps again.~
+  - skylar says: ~As I turn the corner, I see Nova storm out of the Math Team Classroom.~
+  - skylar says: ~Someone pokes their head out the door.~
+  - skylar says: Kenny, Henry, what's going on?
+  - student1 says: Nova said she needed some time alone today. This usually happens every once in a while, but none of us have gone after her.
+  - student2 says: We usually try to respect her space, but she really seems off today. I'm not sure we should leave her alone.
   - choice:
-    - Right Choice:
-      - skylar says: That went well.
-      - var nova: "{nova} + 1"
-      - var finalScore: "{finalScore} + 1"
-    - Wrong Choice:
-      - skylar says: That could've gone better.
+    - Respect her space:
       - var nova: 2
+      - skylar says: If you guys usually leave her alone, then that's what I'll do.
+      - student1 says: Are you sure?
+      - skylar says: I'm still a new kid. I shouldn't intrude on other people's business.
+      - skylar says: ~I will never truly understand Nova or what's bothering her, but that is my decision. It's what I chose.~
+      - skylar says: ~Whatever I lose, that is all on me.~
+    - See what's wrong:
+      - var nova2Score: "{nova2Score} + 1"
+      - skylar says: You guys stay here. I'll see what's wrong.
+      - student2 says: Are you sure, Skylar? We can come with.
+      - skylar says: I'll be fine. Besides, somebody has to take care of the Team while we're gone.
+      - student1 says: Alright! We won't let you down!
+      - student2 says: Kenny...
+      - skylar says: ~The two head back into the classroom while I head off to find Nova.~
+      - show classroom_evening:
+      - skylar says: ~It takes a while, but I track her to an empty classroom.~
+      - skylar says: Nova? Are you around?
+      - nova says: Go away! I don't want to see anybody right now!
+      - skylar says: ~Her voice sounds composed, but there is a sniffle to it.~
+      - choice:
+        - Talk without eye contact:
+          - var nova2Score: "{nova2Score} + 1"
+          - skylar says: Alright. You don't need to see me, but I won't go away.
+          - skylar says: ~I take a seat in the front of the class, my back towards the sound of Nova's voice.
+          - var x: 1
+        - Actively look for her:
+          - skylar says: ~It doesn't take long for me to find her in the back of the room.~
+          - show nova: sad WITH FADE
+          - skylar says: ~When she realizes I see her, she visibly recoils.~
+      - nova says: I told you to go away.
+      - skylar says: You're gonna have to forgive me disobeying you just this once. I'm not leaving you alone when you're like this.
+      - nova says: ...fine.
+      - skylar says: ~The room is quiet, save for only the few sniffs from Nova. I stay silent, waiting for her to say something first.~
+      - nova says: Aren't you going to say anything?
+      - skylar says: I'm here to listen to whatever is bothering you.
+      - skylar says: What's the point of trying to help if I don't know what's wrong in the first place?
+      - nova says: If you don't know what's wrong, how do you know something is wrong?
+      - skylar says: I mean...there were the tears, the yelling, the others telling me that you normally do this and they don't follow you...
+      - skylar says: But other than that, you got me.
+      - if ({x} == 1):
+        - show nova: sad WITH FADE
+      - nova says: ...alright. You're right. Something is wrong. What are you going to do about it? Stick your nose in situations you don't understand?
+      - nova says: I don't want your help.
+      - choice:
+        - We can solve this together:
+          - skylar says: I'm pretty sure that if I understand what's wrong, we can solve it together?
+          - show nova: angry
+          - nova says: I just said I don't want your help.
+          - nova says: Were you even listening to me?!
+          - skylar says: I'm...sorry.
+          - show nova: sorrow
+          - nova says: I need someone who will listen. Can you do that?
+          - skylar says: Yes. I can.
+        - I'm just here to listen, not act:
+          - var nova2Score: "{nova2Score} + 1"
+          - skylar says: No. You're much smarter than me. If it could've been solved, you would've done it already.
+          - skylar says: I can be the person you vent off to.
+          - show nova: sorrow
+          - nova says: Why? So you can judge and tease me later?
+          - skylar says: Okay. First, I'm new, so I have no right to judge others.
+          - skylar says: Second, do I really seem like that kind of person?
+          - nova says: ...Sorry. I'm just...not used to doing this.
+      - nova says: It's just...everyone expects so much from me.
+      - nova says: The teachers expect me to manage multiple clubs.
+      - nova says: The students expect me to help them.
+      - nova says: My parents expect me to score highest in my class.
+      - nova says: I feel like I am stretching myself too thin.
+      - choice:
+        - ~Stay Silent and Nod~:
+          - var nova2Score: "{nova2Score} + 1"
+          - skylar says: ~I simply nod silently and continue to listen to Nova.~
+          - skylar says: ~I may have good ideas, but I shouldn't mention them yet. She doesn't look like she's ready for them.~
+        - You don't have to help all the students.:
+          - skylar says: You don't have to help everyone, you know.
+          - skylar says: I'm pretty sure other students would understand if you said no.
+          - nova says: I can't do that. Too many people rely on me since some teachers are...
+          - skylar says: ~We both kind of stay silent, nodding at the unsaid statement.~
+          - skylar says: ~I want to call her out for being stubborn, but one look tells me she's not ready to hear that yet.~
+        - You could ask the teachers to spread the work.:
+          - skylar says: You could ask the teachers to spread the work among other students.
+          - skylar says: It's not like you're the only one working.
+          - nova says: They wouldn't be able to do the work right. Plus, I would lose the confidence of other teachers and students.
+          - skylar says: ~I want to call her out for being stubborn, but one look tells me she's not ready to hear that yet.~
+      - show nova: sad
+      - nova says: I want to live up to all the expectations, but who's there for me?
+      - nova says: Who's there to listen what I want?
+      - nova says: I act so cold all the time to maintain the high standard expected of me, but maybe I want to let loose!
+      - nova says: Maybe I want to pull-nighter watching TV shows!
+      - nova says: Maybe I want to go an arcade and have mindless fun!
+      - nova says: I help so many people all the time, and all I want is for someone to listen to me.
+      - if ({nova2Score} == 4):
+        - var finalScore: "{finalScore} + 1"
+        - var nova: 2
+        - nova says: To hear me out...
+        - nova says: Someone...like...you.
+        - skylar says: Me???
+        - nova says: Yes. You've...just sat here. Listening to me. Respecting what I want but not leaving me alone.
+        - nova says: I...haven't let anyone see me like this. Not even my parents.
+        - nova says: I think...I'm ready to hear any suggestions, if you have any.
+        - skylar says: You don't give yourself enough credit, you know.
+        - show nova: sorrow
+        - nova says: What do you mean?
+        - skylar says: You may have a cold persona, but the teachers and students love you.
+        - skylar says: They see a Goddess of Knowledge and Willpower who works way more than she should.
+        - skylar says: If you ask, I have no doubt that others will help you.
+        - nova says: Do you believe that?
+        - skylar says: Look at the Math Team. The building isn't on fire, so I say Kenny's doing a pretty good job so far.
+        - show nova: surprised
+        - nova says: Wait, you left him in charge?
+        - skylar says: ~...Oh God! I left him in charge!~
+        - skylar says: That's not important right now.
+        - show nova: normal
+        - skylar says: You work so much to help others, but you can't forget about yourself.
+        - skylar says: Ask for help. Watch some series.
+        - skylar says: And if you need someone to watch your back at the arcade games, I'll be there.
+        - show nova: happy
+        - nova says: Skylar...thank you.
+        - skylar says: ~With that, Nova and I return to the Math Team.~
+        - skylar says: ~To our immense relief, Henry had restrained Kenny and everything was going smoothly.~
+        - skylar says: ~It takes me a while to notice, but Nova has not stopped smiling.~
+      - else:
+        - var nova: 2
+        - skylar says: ~All I can do is listen to Nova's ranting as she calms down.~
+        - show nova: sorrow
+        - skylar says: ~She may be calm now, but I think I failed in helping her.~
+        - skylar says: ~I probably said some things she didn't want to hear.~
+        - skylar says: ~I helped her, but not as much as I could've.~
   - if ({day} == 2):
     - scene: day2
   - if ({day} == 3):
@@ -1350,21 +1805,3 @@ nova2:
     - scene: day9
   - if ({day} == 10):
     - scene: day10
-
-end1:
-  - show classroom_day:
-  - play morningBGM:
-  - skylar says: ~After alienating my classmates, time seemed to just pass.~
-  - skylar says: ~The daily grind came about again. So much so that I didn't pay attention to the news.~
-  - skylar says: ~Insert nuclear siren~
-  - skylar says: ~Not until it was too late.~
-
-end2:
-
-end3:
-
-end4:
-
-end5:
-  - show living_day:
-  - news says: In an astonishing turn of events, the President and the Dictator are meeting today to sign a treaty of peace.
