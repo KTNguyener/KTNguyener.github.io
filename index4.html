@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <audio id="SayWhatAgain" src="Assets2/SayWhatAgain.mp3" autostart="false"></audio>
+<audio id="jumpScare" src="https://vignette.wikia.nocookie.net/freddy-fazbears-pizza/images/3/32/FNaF4_Jumpscare.ogg/revision/latest?cb=20150728190209" autostart="false"></audio>
 <title>Accelerometer Javascript Test</title>
 <meta name="viewport" content="width=device-width,user-scalable=yes" />
 <style>
@@ -51,9 +52,9 @@ if (window.DeviceMotionEvent != undefined) {
 		ax = event.accelerationIncludingGravity.x * 5;
 		ay = event.accelerationIncludingGravity.y * 5;
 		if (e.accelerationIncludingGravity.x < 3) {
-      var sound=document.getElementById('SayWhatAgain');
+      			var jumpScare=document.getElementById('jumpScare');
 			document.body.style.backgroundColor = "red";
-      sound.play();
+      			jumpScare.play();
 		}
 		else {
              document.body.style.backgroundColor = "white";
