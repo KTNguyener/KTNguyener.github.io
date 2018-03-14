@@ -21,8 +21,10 @@ body {
 </head>
 
 <body>
-	<audio id="SayWhatAgain" src="Assets2/SayWhatAgain.mp3" autostart="false"></audio>
-	<audio id="jumpScare" src="https://vignette.wikia.nocookie.net/freddy-fazbears-pizza/images/3/32/FNaF4_Jumpscare.ogg/revision/latest?cb=20150728190209" autostart="false"></audio>
+	<audio id="myAudio" controls autoplay>
+  		<audio src="Assets2/SayWhatAgain.mp3" type="audio/mpeg"></audio>
+ 		 Your browser does not support the audio element.
+	</audio>
 <div id="content">
     <h1>Accelerometer Javascript Test</h1>
     <br>
@@ -52,15 +54,13 @@ if (window.DeviceMotionEvent != undefined) {
 		ax = event.accelerationIncludingGravity.x * 5;
 		ay = event.accelerationIncludingGravity.y * 5;
 		if (e.accelerationIncludingGravity.x < 3) {
-      			var jumpScare=document.getElementById('SayWhatAgain');
+      			document.getElementById('myAudio').play();
 			document.body.style.backgroundColor = "red";
-      			jumpScare.play();
 		}
 		else {
              document.body.style.backgroundColor = "white";
-		var jumpScare=document.getElementById('SayWhatAgain');
+		document.getElementById('myAudio').play();
 		document.body.style.backgroundColor = "red";
-      		jumpScare.play();
          }
 		document.getElementById("accelerationX").innerHTML = e.accelerationIncludingGravity.x;
 		document.getElementById("accelerationY").innerHTML = e.accelerationIncludingGravity.y;
