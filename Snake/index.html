@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <script src="libraries/p5.js"></script>
+    <script src="snake2.js"></script>
+  </head>
+  <body>
+    <h2 id="score">Hi</h2>
+    <script>
+    var direction;
+    var s;//global variable that can be saved
+    var scl = 20;
+    var food;
+    var x = 10;
+    var w = 600
+    var h = 600
+      function setup() {
+        createCanvas(w,h);
+        s = new Snake();//object constructor. need a global variable above
+        background(0,0,0)//sets background color to black
+        foodLocation();
+      }
+
+      function draw() {
+        frameRate(x);
+        background(0,0,0);
+        s.show();
+        s.update();
+        s.death();
+
+        fill(255,0,0) //This is the color of the food
+        rect(food.x, food.y, scl, scl); //This is the food shape
+
+        if (s.eat(food)) { //We run the eat function in the object constructor
+          foodLocation(); //Runs this function when the eat fucntion in the object constructor is true.
+          x++;
+        }
+      }
+
+      function foodLocation() {
+        var cols = floor(width/scl);
+        var rows = floor(height/scl);
+        food = createVector(floor(random(cols)), floor(random(rows)));//generating random number between 0 and number of cols and rows
+        food.mult(scl);
+      }
+
+      function keyPressed() { //Arrow Key controls based on setting dir, which is referenced in snake.js
+        if ((keyCode === UP_ARROW) || (keyCode === 87)) { //Moves snake up
+
+          if (direction != "down") {
+            s.dir(0,-1);
+            direction = "up"
+          }
+
+        }
+        else if ((keyCode === DOWN_ARROW) || (keyCode === 83)) { //Moves snake down
+
+          if (direction != "up") {
+            s.dir(0,1);
+            direction = "down"
+          }
+
+        }
+        else if ((keyCode === RIGHT_ARROW) || (keyCode === 68)) { //Moves snake right
+          direction = "right"
+          s.dir(1,0);
+        }
+        else if ((keyCode === LEFT_ARROW) || (keyCode === 65)) { //Moves snake left
+          direction = "left"
+          s.dir(-1,0);
+        }
+      }
+    </script>
+  </body>
+</html>
